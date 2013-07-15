@@ -1,0 +1,264 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/gainsboro" >
+
+    <RelativeLayout
+        android:id="@+id/headsetnaonao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/headstyle" >
+
+        <Button
+            android:id="@+id/backsetreminder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_bg"
+            android:text="返回"
+            android:textColor="@color/white" >
+        </Button>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="小闹闹记录体温"
+            android:textColor="@color/white"
+            android:textSize="20dp" >
+        </TextView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/headsetnaonao"
+        android:background="@drawable/infostyle" >
+
+        <RelativeLayout
+            android:id="@+id/remindersetlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/login_btn_bg" >
+
+            <ImageView
+                android:id="@+id/image_reminder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/clock_img" >
+            </ImageView>
+
+            <TextView
+                android:id="@+id/clock_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/image_reminder"
+                android:gravity="center"
+                android:text="小闹闹提醒时间"
+                android:textColor="@color/grey" >
+            </TextView>
+
+            <CheckBox
+                android:id="@+id/checkreminder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp" >
+            </CheckBox>
+
+            <TextView
+                android:id="@+id/setedremindertime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/checkreminder"
+                android:text="07:30" >
+            </TextView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/settimescreen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/remindersetlayout"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/txtzhuanjia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:text="@string/advice"
+                android:textColor="@color/grey" />
+
+            <LinearLayout
+                android:id="@+id/rtimes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtzhuanjia"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/rtime3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <ImageButton
+                        android:id="@+id/add_h3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/plus_bg" />
+
+                    <EditText
+                        android:id="@+id/values_h3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:ems="2"
+                        android:gravity="center"
+                        android:text="11" >
+                    </EditText>
+
+                    <ImageButton
+                        android:id="@+id/delete_h3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/sub_bg" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/rtime4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <ImageButton
+                        android:id="@+id/add_min4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/plus_bg" />
+
+                    <EditText
+                        android:id="@+id/values_min4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:ems="2"
+                        android:gravity="center"
+                        android:text="10" />
+
+                    <ImageButton
+                        android:id="@+id/delete_min4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/sub_bg" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/tagreminder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dp" >
+
+            <ImageView
+                android:id="@+id/image_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/label_img" >
+            </ImageView>
+
+            <TextView
+                android:id="@+id/tag_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/image_tag"
+                android:gravity="center"
+                android:text="说些什么"
+                android:textColor="@color/grey" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/edittag"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:layout_toRightOf="@id/tag_txt" >
+            </EditText>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/musicreminder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/tagreminder"
+            android:layout_marginBottom="5dp" >
+
+            <ImageView
+                android:id="@+id/image_music"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/remind_img" >
+            </ImageView>
+
+            <TextView
+                android:id="@+id/music_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/image_music"
+                android:gravity="center"
+                android:text="开启闹闹震动"
+                android:textColor="@color/grey" >
+            </TextView>
+
+            <CheckBox
+                android:id="@+id/editmusic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp" >
+            </CheckBox>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

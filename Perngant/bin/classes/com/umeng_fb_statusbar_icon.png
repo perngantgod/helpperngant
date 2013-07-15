@@ -1,0 +1,56 @@
+c]
+  + Utf8 [a/c]
+  + Utf8 [a/e/a/m]
+  + Utf8 [append]
+  + Utf8 [b]
+  + Utf8 [c]
+  + Utf8 [d]
+  + Utf8 [e]
+  + Utf8 [f]
+  + Utf8 [g]
+  + Utf8 [h]
+  + Utf8 [i]
+  + Utf8 [j]
+  + Utf8 [java/lang/Object]
+  + Utf8 [java/lang/StringBuilder]
+  + Utf8 [k]
+  + Utf8 [l]
+  + Utf8 [m]
+  + Utf8 [n]
+  + Utf8 [o]
+  + Utf8 [p]
+  + Utf8 [q]
+  + Utf8 [r]
+  + Utf8 [s]
+  + Utf8 [toString]
+
+Fields (count = 19):
+  + Field:        a La/b/c;
+    Access flags: 0x9
+      = public static a.b.c a
+  + Field:        j Ljava/lang/String;
+    Access flags: 0x2
+      = private java.lang.String j
+  + Field:        k D
+    Access flags: 0x2
+      = private double k
+  + Field:        l D
+    Access flags: 0x2
+      = private double l
+  + Field:        m La/a/a/i;
+    Access flags: 0x2
+      = private a.a.a.i m
+  + Field:        n La/a/a/h;
+    Access flags: 0x2
+      = private a.a.a.h n
+  + Field:        o La/a/aa;
+    Access flags: 0x2
+      = private a.a.aa o
+  + Field:        p La/a/t;
+    Access flags: 0x2
+      = private a.a.t p
+  + Field:        q Z
+    Access flags: 0x2
+      = private boolean q
+  + Field:        r Z
+    Access flags: 0x

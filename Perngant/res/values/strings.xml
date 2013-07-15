@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">幸孕草</string>
+    <string name="startnoupdate">没有更新</string>
+    <string name="onlywifi">没有wifi连接， 只在wifi下更新</string>
+    <string name="timeout">超时</string>
+    <string name="yuejin">现今您处于月经期，饮食上要注意清谈，多补充含蛋白质和锌铁钾钠镁的食物，最近可以过把甜食瘾，适量奥，生活上尽量不要洗头，可以泡泡热水脚</string>
+    <string name="yiyunqi">现您处于易孕期，不想当妈妈，别忘了准备好避孕奥。 </string>
+    <string name="zjyiyunqi">现在你的嗅觉特别灵敏，是为自己寻找一种新香水的最好时机啦，也是最佳怀孕的时期奥。</string>
+    <string name="anquanqi1">现您处于排卵前安全期，可以享受二人之乐啦，但是也要注意避孕奥</string>
+    <string name="anquanqi2">现您处于排卵后安全期，排卵后胃口大开是完全正常的现象，身体储存能量，为可能的受孕做好准备。最好的对策是多吃水果和喝茶，它们都能很好地抑制食欲。</string>
+    <string name="advice">专家建议：测量基础体温的最佳时间是睡足6小时候的自然醒状态。</string>
+    <string name="tagdefault">闹闹提醒你记录体温啦。。。</string>
+    <string name="marktemperature">记录体温</string>
+    <string name="copyright">Copyright 2013-2016 隽一互联 版权所有</string>
+    <string name="version">幸孕草 V1.0</string>
+    <string name="sharetxt">分享給您的摯友</string>
+    <string name="sharecontent">"幸孕草"这款小应用不错奥，贴心又管用，你也试试吧</string>
+    <string name="app_channel">wandoujia</string>
+    <string name="analysis_error">您输入的日期有误，请重新输入最近一次大姨妈来的日期。。。</string>
+    <string name="analysis_est_today">姨妈也许今天驾到奥。。。</string>
+    <string name="analysis_next">离下次大姨妈来还有</string>
+    <string name="day">天</string>
+    <string name="canerror">选择的日期不能大于今天的日期...</string>
+    <string name="reminderNao">闹闹提醒</string>
+    <string name="know">知道啦</string>
+    <string name="umeng_example_home_btn_analytics">统计分析</string>
+    <string name="umeng_example_home_btn_xp">应用联盟</string>
+    <string name="umeng_example_home_btn_ad">移动广告</string>
+    <string name="umeng_example_home_btn_tools">工具</string>
+    <string name="umeng_example_home_btn_fb">用户反馈</string>
+    <string name="umeng_example_home_btn_update">自动更新</string>
+    <string name="umeng_example_home_btn_plus">社交分享</string>
+    <string name="umeng_example_home_btn_xp_ufp">Umeng For Publisher</string>
+    <string name="umeng_example_xp_home_btn_container">嵌入容器</string>
+    <string name="umeng_example_xp_home_btn_banner">横幅</string>
+    <string name="umeng_example_xp_home_btn_banner_ufp">"横幅\n(UFP)"</string>
+    <string name="umeng_example_xp_home_btn_handler">小把手</string>
+    <string name="umeng_example_xp_home_btn_handler_ufp">"小把手\n(UFP)"</string>
+    <string name="umeng_example_xp_home_btn_tab">多页面</string>
+    <string name="umeng_example_xp_home_btn_custom">自定义样式</string>
+    <string name="umeng_example_xp_home_btn_wap">Web页</string>
+    <string name="umeng_example_xp_home_btn_wap_ufp">"Web页\n(UFP)"</string>
+    <string name="umeng_example_xp_home_btn_textlink">文字链</string>
+    <string name="umeng_example_xp_home_btn_container_header">轮播大图\n(UFP)</string>
+    <string name="umeng_example_xp_home_btn_push_header">推送弹窗\n(UFP)</string>
+    <string name="umeng_example_xp_home_handler_icons">图标列表\n(UFP)</string>
+    <string name="umeng_example_fb_home_btn_simple">简单反馈</string>
+    <string name="actionbar_activity_not_found">打开Activity失败</string>
+    <string name="umeng_example_home_hint_wait">敬请期待</string>
+    <string name="intro"> 下面展示使用 js 调用友盟 自定义事件  APIs</string>
+    <string name="UMBreak_Network">未联网</string>
+    <string name="UMUpdateTitle">发现新版本</string>
+    <string name="UMNewVersion">最新版本: </string>
+    <string name="UMUpdateContent">更新内容</string>
+    <string name="UMUpdateSize">仅需要下载：</string>
+    <string name="UMTargetSize">新版本大小：</string>
+    <string name="UMGprsCondition">（提示：非WIFI环境）</string>
+    <string name="UMUpdateNow">立即更新</string>
+    <string name="UMAppUpdate">应用更新</string>
+    <string name="UMNotNow">以后再说</string>
+    <string name="UMToast_IsUpdating">正在更新中....</string>
+    <string name="UMDialog_InstallAPK">最新版本已下载，是否安装？</string>
+    <string name="umeng_xp_size">大小</string>
+    <string name="umeng_xp_action_open">打开</string>
+    <string name="umeng_xp_action_browse">浏览</string>
+    <string name="umeng_xp_action_download">下载</string>
+    <string name="umeng_xp_action_callphone"></string>
+    <string name="umeng_xp_more">更多精彩推荐</string>
+    <string name="umeng_xp_back_to_top">回到顶部</string>
+    <string name="umeng_xp_back">返回</string>
+    <string name="umeng_xp_dowloadOrNot">是否下载推荐应用？</string>
+    <string name="umeng_xp_title_info">精彩推荐</string>
+    <string name="umeng_xp_dowload_dialog_dinfo">马上下载</string>
+    <string name="umeng_xp_dowload_dialog_cinfo">马上拨打</string>
+    <string name="umeng_xp_failed_loading">加载失败...</string>
+    <string name="umeng_xp_no_browser_tips">请先安装浏览器..</string>
+    <string name="umeng_xp_tip_download_pre">开始下载 </string>
+    <string name="umeng_xp_network_break_alert">请连接网络后再尝试！</string>
+    <string name="umeng_xp_info_banner_deprecated">当前SDK版本不支持Banner样式,请联系客服.</string>
+    <string name="umeng_fb_powered_by">Powered by</string>
+
+</resources>

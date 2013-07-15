@@ -1,0 +1,171 @@
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/option_temp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.14"
+            android:background="@drawable/button_bg"
+            android:src="@drawable/day_remark" />
+
+        <ImageView
+            android:id="@+id/option_love"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="0.14"
+            android:background="@drawable/button_bg"
+            android:src="@drawable/iscopulate" />
+
+        <ImageView
+            android:id="@+id/option_medicine"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="0.14"
+            android:background="@drawable/button_bg"
+            android:src="@drawable/medicine_img" />
+
+        <ImageView
+            android:id="@+id/option_tool"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="0.14"
+            android:background="@drawable/button_bg"
+            android:src="@drawable/tool_img" />
+        <TextView
+            android:id="@+id/come_option"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="0.14"
+            android:background="@drawable/button_bg"
+            android:textColor="@color/white"
+            android:text="来" />
+        <TextView
+            android:id="@+id/go_option"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="0.14"
+            android:textColor="@color/white"
+            android:background="@drawable/button_bg"
+            android:text="去"/>
+
+        <!--ImageView
+            android:id="@+id/option_mood"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="0.14"
+            android:background="@drawable/button_bg"
+            android:src="@drawable/mood" />
+
+        <ImageView
+            android:id="@+id/option_remark"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="0.14"
+            android:background="@drawable/button_bg"
+            android:src="@drawable/remark_img" /  -->
+    </LinearLayout>
+
+    <!--LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.14"
+            android:gravity="center"
+            android:text="體溫"
+            android:textColor="@color/black"
+            android:textSize="10dp" >
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.14"
+            android:gravity="center"
+            android:text="爱爱"
+            android:textColor="@color/black"
+            android:textSize="10dp" >
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.14"
+            android:gravity="center"
+            android:text="用药"
+            android:textColor="@color/black"
+            android:textSize="10dp" >
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.14"
+            android:gravity="center"
+            android:text="避孕套"
+            android:textColor="@color/black"
+            android:textSize="10dp" >
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.14"
+            android:gravity="center"
+            android:text="心情"
+            android:textColor="@color/black"
+            android:textSize="10dp" >
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.14"
+            android:gravity="center"
+            android:text="备注"
+            android:textColor="@color/black"
+            android:textSize="10dp" />
+    </LinearLayout -->
+
+    <!--
+    LinearLayout
+        android:id="@+id/menu_come"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/gainsboro"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/remark_img" >
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="姨妈来"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="10dp" >
+        </TextView>
+    </LinearLayout-->
+

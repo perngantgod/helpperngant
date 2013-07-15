@@ -1,0 +1,22 @@
+ attributes (attribute count = 0):
+  + Method:       d()V
+    Access flags: 0x1
+      = public void d()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 29, locals = 1, stack = 2):
+      [0] aload_0 v0
+      [1] aconst_null
+      [2] putfield #25
+        + Fieldref [a/a/d.j Ljava/lang/String;]
+      [5] aload_0 v0
+      [6] getfield #28
+        + Fieldref [a/a/d.m La/a/a/i;]
+      [9] ifnull +19 (target=28)
+      [12] aload_0 v0
+      [13] getfield #34
+        + Fieldref [a/a/d.s La/e/a/m;]
+      [16] aload_0 v0
+      [17] getfield #28
+        + Fieldref [a/a/d.m La/a/a/i;]
+      [20] invokevirtual #57
+        + Methodref [a/e/a

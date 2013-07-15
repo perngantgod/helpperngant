@@ -1,0 +1,127 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/gainsboro" >
+
+    <RelativeLayout
+        android:id="@+id/headsetbackup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/headstyle" >
+
+        <Button
+            android:id="@+id/backsetbackup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_bg"
+            android:text="返回"
+            android:textColor="@color/white" >
+        </Button>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="備份"
+            android:textColor="@color/white"
+            android:textSize="20dp" >
+        </TextView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/headsetbackup"
+        android:background="@drawable/infostyle" >
+         <RelativeLayout
+            android:id="@+id/local"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/login_btn_bg" >
+
+            <ImageView
+                android:id="@+id/image_local"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/local" >
+            </ImageView>
+
+            <TextView
+                android:id="@+id/local_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/image_local"
+                android:gravity="center"
+                android:text="本地備份"
+                android:textColor="@color/grey" >
+            </TextView>
+
+            <ImageButton
+                android:id="@+id/localdir"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/start"
+                android:background="@android:color/transparent"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp" >
+            </ImageButton>
+
+        </RelativeLayout>
+        
+         <RelativeLayout
+            android:id="@+id/remote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/local"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/login_btn_bg" 
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/image_remote"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/mail" >
+            </ImageView>
+
+            <EditText
+                android:id="@+id/mail_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/image_remote"
+                android:gravity="center"
+                android:hint="請輸入你的郵箱地址"
+                android:textColor="@color/grey" >
+            </EditText>
+
+            <ImageButton
+                android:id="@+id/mailremote"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/start"
+                android:layout_centerVertical="true"
+                android:background="@android:color/transparent"
+                android:layout_marginRight="5dp" >
+            </ImageButton>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

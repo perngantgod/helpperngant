@@ -1,0 +1,358 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gainsboro"
+    android:orientation="vertical"
+    android:id="@+id/initset" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/headstyle" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="请先设置"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/maincontent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/infostyle" >
+
+        <LinearLayout
+            android:id="@+id/notify_set"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/nurse" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="亲，您是第一次使用，请填写以下信息，不要嫌麻烦奥"
+                android:textColor="@color/grey"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/mainset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/notify_set"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp" >
+
+            <RelativeLayout
+                android:id="@+id/setfirst"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentTop="true" >
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/recent_img" />
+
+                <TextView
+                    android:id="@+id/txtfirst"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/imageView1"
+                    android:text="最近一次姨妈访问时间"
+                    android:textColor="@color/grey"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/pretimeFSet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/txtfirst"
+                    android:layout_marginLeft="20dp"
+                    android:text="未知"
+                    android:textColor="@color/grey"
+                    android:textSize="16dp"
+                    android:singleLine="true"
+                    android:textStyle="bold" />
+
+                <ImageButton
+                    android:id="@+id/pretime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="12dp"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/config_tail" >
+                </ImageButton>
+            </RelativeLayout>
+
+            <FrameLayout
+                android:id="@+id/firstdiv"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@id/setfirst"
+                android:background="@drawable/menu_divider" >
+            </FrameLayout>
+
+            <RelativeLayout
+                android:id="@+id/setduration"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/firstdiv" >
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/recent_days_img" />
+
+                <TextView
+                    android:id="@+id/txtduration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/imageView2"
+                    android:text="姨妈逗留时间"
+                    android:textColor="@color/grey"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/durationTimeFSet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/txtduration"
+                    android:layout_marginLeft="20dp"
+                    android:text="5天"
+                    android:textColor="@color/grey"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <ImageButton
+                    android:id="@+id/durationtime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="12dp"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/config_tail" />
+            </RelativeLayout>
+
+            <FrameLayout
+                android:id="@+id/seconddiv"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@id/setduration"
+                android:background="@drawable/menu_divider" >
+            </FrameLayout>
+
+            <RelativeLayout
+                android:id="@+id/setaverage"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/seconddiv" >
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/recent_period_img" />
+
+                <TextView
+                    android:id="@+id/txtave"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/imageView3"
+                    android:text="姨妈多久探望一次"
+                    android:textColor="@color/grey"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/averageTimeFSet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/txtave"
+                    android:layout_marginLeft="20dp"
+                    android:text="28天"
+                    android:textColor="@color/grey"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <ImageButton
+                    android:id="@+id/aveargetime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="12dp"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/config_tail" />
+            </RelativeLayout>
+
+            <FrameLayout
+                android:id="@+id/thirddiv"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@id/setaverage"
+                android:background="@drawable/menu_divider" >
+            </FrameLayout>
+
+            <RelativeLayout
+                android:id="@+id/setrem"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/thirddiv" >
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/remind_img" />
+
+                <TextView
+                    android:id="@+id/txtrem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/imageView4"
+                    android:text="每日提醒记录体温"
+                    android:textColor="@color/grey"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <CheckBox
+                    android:id="@+id/btreminder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="12dp"
+                    android:src="@drawable/config_tail" />
+            </RelativeLayout>
+
+            <FrameLayout
+                android:id="@+id/fourthdiv"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@id/setrem"
+                android:background="@drawable/menu_divider" >
+            </FrameLayout>
+
+            <RelativeLayout
+                android:id="@+id/reminderTimeScreen"
+                android:layout_below="@id/fourthdiv"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/recent_remind_img" />
+
+                <TextView
+                    android:id="@+id/txtremindtime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/imageView4"
+                    android:text="提醒時間"
+                    android:textColor="@color/grey"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/remindeRealTimeFSet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/txtremindtime"
+                    android:text="07:30"
+                    android:textColor="@color/grey"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <ImageButton
+                    android:id="@+id/remindtime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="12dp"
+                    android:layout_centerVertical="true"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/config_tail" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mainset"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="10dp"
+            android:text="@string/advice"
+            android:textColor="@color/grey"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/next"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/button_bg"
+            android:textColor="@color/white"
+            android:text="下一步" 
+            android:textSize="16dp"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

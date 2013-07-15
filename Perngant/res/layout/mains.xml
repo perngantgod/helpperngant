@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0" 
+            android:background="@color/calendar_background"/>
+
+        <RadioGroup
+            android:id="@+id/tab_group"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@drawable/tab_bg"
+            android:checkedButton="@+id/tab1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@id/tab1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="1.0dip"
+                android:layout_weight="1.0"
+                android:button="@null"
+                android:drawableTop="@drawable/analysis"
+                android:background="@drawable/tab_bg_selector"
+                android:gravity="center"
+                android:tag="tab1"
+                android:text="生理分析"
+                android:textSize="14dp"
+                 />
+
+            <RadioButton
+                android:id="@+id/tab2"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="1.0dip"
+                android:layout_weight="1.0"
+                android:background="@drawable/tab_bg_selector"
+                android:button="@null"
+                android:gravity="center"
+                android:text="曲线分析" 
+                android:drawableTop="@drawable/chart"
+                android:textSize="14dp"/>
+
+            <RadioButton
+                android:id="@+id/tab3"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="1.0dip"
+                android:layout_weight="1.0"
+                android:background="@drawable/tab_bg_selector"
+                android:button="@null"
+                android:gravity="center"
+                android:text="我的日历"
+                android:drawableTop="@drawable/schedule"
+                android:textSize="14dp" />
+             <RadioButton
+                android:id="@+id/tab4"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="1.0dip"
+                android:layout_weight="1.0"
+                android:background="@drawable/tab_bg_selector"
+                android:button="@null"
+                android:gravity="center"
+                android:text="设置"
+                android:drawableTop="@drawable/setting"
+                android:textSize="14dp" />
+        </RadioGroup>
+    </LinearLayout>
+
+</TabHost>

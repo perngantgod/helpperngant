@@ -108,7 +108,6 @@ public class SmoothScrollView extends ScrollView {
         // 设置回到正常的布局位置  
         inner.layout(normal.left, normal.top, normal.right, normal.bottom);  
         normal.setEmpty();  
-  
     }  
   
     // 是否需要开启动画  

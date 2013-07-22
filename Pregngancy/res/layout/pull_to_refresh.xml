@@ -5,234 +5,240 @@
     android:layout_height="fill_parent"
     android:saveEnabled="true" >
 
-    <LinearLayout
-        android:id="@+id/settingcontent"
+    <com.jun.pregnancy.views.SmoothScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/settingbackground"
-        android:orientation="vertical"
-        android:saveEnabled="true" >
+        android:background="@color/settingbackground" >
 
-        <RelativeLayout
+        <LinearLayout
+            android:id="@+id/settingcontent"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/left_margin_advice" >
+            android:layout_height="match_parent"
+            android:background="@color/settingbackground"
+            android:orientation="vertical"
+            android:saveEnabled="true" >
 
-            <ImageView
-                android:id="@+id/image_plan"
-                android:layout_width="wrap_content"
+            <RelativeLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
-                android:layout_centerVertical="true"
-                android:src="@drawable/settings" >
-            </ImageView>
+                android:layout_marginLeft="@dimen/left_margin_advice" >
 
-            <TextView
-                android:id="@+id/plantexts"
-                android:layout_width="wrap_content"
+                <ImageView
+                    android:id="@+id/image_plan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/settings" >
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/plantexts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/left_margin"
+                    android:layout_toRightOf="@id/image_plan"
+                    android:text="@string/plan"
+                    android:textColor="@color/black" >
+                </TextView>
+
+                <ImageView
+                    android:id="@+id/planicon"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/top_margin_advice"
+                    android:layout_toRightOf="@id/plantexts"
+                    android:onClick="onClick"
+                    android:src="@drawable/icon_radio_disable"
+                    android:tag="1" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="28dp"
+                android:background="@color/grey" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/left_margin"
+                    android:text="@string/toolsetting"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/yimaset"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_centerVertical="true"
                 android:layout_marginLeft="@dimen/left_margin"
-                android:layout_toRightOf="@id/image_plan"
-                android:text="@string/plan"
-                android:textColor="@color/black" >
-            </TextView>
-
-            <ImageView
-                android:id="@+id/planicon"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_centerVertical="true"
-                android:layout_marginLeft="@dimen/top_margin_advice"
-                android:layout_toRightOf="@id/plantexts"
                 android:onClick="onClick"
-                android:src="@drawable/icon_radio_disable"
-                android:tag="1" />
-        </RelativeLayout>
+                android:tag="2" >
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="28dp"
-            android:background="@color/grey" >
+                <ImageView
+                    android:id="@+id/yimasetting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/settings" >
+                </ImageView>
 
-            <TextView
-                android:layout_width="wrap_content"
+                <TextView
+                    android:id="@+id/yimatexts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/left_margin"
+                    android:layout_toRightOf="@id/yimasetting"
+                    android:text="@string/yimasetting"
+                    android:textColor="@color/black" >
+                </TextView>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="@color/grey" >
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/shares"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
                 android:layout_marginLeft="@dimen/left_margin"
-                android:text="@string/toolsetting"
-                android:textColor="@color/black" />
+                android:onClick="onClick"
+                android:tag="3" >
+
+                <ImageView
+                    android:id="@+id/sharesetting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/settings" >
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/sharetexts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/left_margin"
+                    android:layout_toRightOf="@id/sharesetting"
+                    android:text="@string/sharesetting"
+                    android:textColor="@color/black" >
+                </TextView>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="@color/grey" >
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/backups"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/left_margin"
+                android:onClick="onClick"
+                android:tag="4" >
+
+                <ImageView
+                    android:id="@+id/backupsetting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/settings" >
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/backtexts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/left_margin"
+                    android:layout_toRightOf="@id/backupsetting"
+                    android:text="@string/backupsetting"
+                    android:textColor="@color/black" >
+                </TextView>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="@color/grey" >
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/feedback"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/left_margin"
+                android:onClick="onClick"
+                android:tag="5" >
+
+                <ImageView
+                    android:id="@+id/feedbacksetting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/settings" >
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/feedbacktexts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/left_margin"
+                    android:layout_toRightOf="@id/feedbacksetting"
+                    android:text="@string/feedbacksetting"
+                    android:textColor="@color/black" >
+                </TextView>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="@color/grey" >
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/aboutus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/left_margin"
+                android:onClick="onClick"
+                android:tag="6" >
+
+                <ImageView
+                    android:id="@+id/aboutsetting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/settings" >
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/abouttexts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/left_margin"
+                    android:layout_toRightOf="@id/aboutsetting"
+                    android:text="@string/aboutsetting"
+                    android:textColor="@color/black" >
+                </TextView>
+            </RelativeLayout>
         </LinearLayout>
-
-        <RelativeLayout
-            android:id="@+id/yimaset"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/left_margin"
-            android:onClick="onClick"
-            android:tag="2" >
-
-            <ImageView
-                android:id="@+id/yimasetting"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
-                android:layout_centerVertical="true"
-                android:src="@drawable/settings" >
-            </ImageView>
-
-            <TextView
-                android:id="@+id/yimatexts"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerVertical="true"
-                android:layout_marginLeft="@dimen/left_margin"
-                android:layout_toRightOf="@id/yimasetting"
-                android:text="@string/yimasetting"
-                android:textColor="@color/black" >
-            </TextView>
-        </RelativeLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="3dp"
-            android:background="@color/grey" >
-        </LinearLayout>
-
-        <RelativeLayout
-            android:id="@+id/shares"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/left_margin"
-            android:onClick="onClick"
-            android:tag="3" >
-
-            <ImageView
-                android:id="@+id/sharesetting"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
-                android:layout_centerVertical="true"
-                android:src="@drawable/settings" >
-            </ImageView>
-
-            <TextView
-                android:id="@+id/sharetexts"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerVertical="true"
-                android:layout_marginLeft="@dimen/left_margin"
-                android:layout_toRightOf="@id/sharesetting"
-                android:text="@string/sharesetting"
-                android:textColor="@color/black" >
-            </TextView>
-        </RelativeLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="3dp"
-            android:background="@color/grey" >
-        </LinearLayout>
-
-        <RelativeLayout
-            android:id="@+id/backups"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/left_margin"
-            android:onClick="onClick"
-            android:tag="4" >
-
-            <ImageView
-                android:id="@+id/backupsetting"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
-                android:layout_centerVertical="true"
-                android:src="@drawable/settings" >
-            </ImageView>
-
-            <TextView
-                android:id="@+id/backtexts"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerVertical="true"
-                android:layout_marginLeft="@dimen/left_margin"
-                android:layout_toRightOf="@id/backupsetting"
-                android:text="@string/backupsetting"
-                android:textColor="@color/black" >
-            </TextView>
-        </RelativeLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="3dp"
-            android:background="@color/grey" >
-        </LinearLayout>
-
-        <RelativeLayout
-            android:id="@+id/feedback"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/left_margin"
-            android:onClick="onClick"
-            android:tag="5" >
-
-            <ImageView
-                android:id="@+id/feedbacksetting"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
-                android:layout_centerVertical="true"
-                android:src="@drawable/settings" >
-            </ImageView>
-
-            <TextView
-                android:id="@+id/feedbacktexts"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerVertical="true"
-                android:layout_marginLeft="@dimen/left_margin"
-                android:layout_toRightOf="@id/feedbacksetting"
-                android:text="@string/feedbacksetting"
-                android:textColor="@color/black" >
-            </TextView>
-        </RelativeLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="3dp"
-            android:background="@color/grey" >
-        </LinearLayout>
-
-        <RelativeLayout
-            android:id="@+id/aboutus"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/left_margin"
-            android:onClick="onClick"
-            android:tag="6" >
-
-            <ImageView
-                android:id="@+id/aboutsetting"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
-                android:layout_centerVertical="true"
-                android:src="@drawable/settings" >
-            </ImageView>
-
-            <TextView
-                android:id="@+id/abouttexts"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerVertical="true"
-                android:layout_marginLeft="@dimen/left_margin"
-                android:layout_toRightOf="@id/aboutsetting"
-                android:text="@string/aboutsetting"
-                android:textColor="@color/black" >
-            </TextView>
-        </RelativeLayout>
-    </LinearLayout>
+    </com.jun.pregnancy.views.SmoothScrollView>
 
     <LinearLayout
         android:id="@+id/main"
@@ -297,12 +303,15 @@
             android:background="@drawable/splash_back"
             android:orientation="vertical" >
 
-            <com.jun.pregnancy.views.SmoothScrollView
+            <com.handmark.pulltorefresh.library.PullToRefreshScrollView
+                xmlns:ptr="http://schemas.android.com/apk/res-auto"
                 android:id="@+id/contentview"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:fillViewport="true"
-                android:scrollbars="none" >
+                android:scrollbars="none"
+                ptr:ptrHeaderBackground="@android:color/darker_gray"
+                ptr:ptrHeaderTextColor="@android:color/white" >
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -313,14 +322,9 @@
                         android:id="@+id/currentmain"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/background" 
                         android:layout_marginLeft="@dimen/left_margin_advice"
-                        android:layout_marginRight="@dimen/right_margin_advice" >
-
-                        
-
-
-                       
+                        android:layout_marginRight="@dimen/right_margin_advice"
+                        android:background="@drawable/background" >
 
                         <!-- rate -->
 
@@ -331,8 +335,7 @@
                             android:layout_alignParentBottom="true"
                             android:layout_alignParentLeft="true"
                             android:layout_marginLeft="@dimen/left_margin"
-                            android:layout_marginTop="@dimen/left_margin"
-                            >
+                            android:layout_marginTop="@dimen/left_margin" >
 
                             <ImageView
                                 android:id="@+id/todayper"
@@ -353,17 +356,15 @@
                                 android:text="@string/demovalue"
                                 android:textColor="@color/text_colors" />
                         </RelativeLayout>
-                        
-                        
-                         <!-- days -->
+
+                        <!-- days -->
 
                         <RelativeLayout
                             android:id="@+id/daysshow"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_above="@id/rateshow"
-                            android:layout_marginLeft="@dimen/left_margin"
-                            >
+                            android:layout_marginLeft="@dimen/left_margin" >
 
                             <ImageView
                                 android:id="@+id/daysleft"
@@ -647,7 +648,7 @@
                         </LinearLayout>
                     </LinearLayout>
                 </LinearLayout>
-            </com.jun.pregnancy.views.SmoothScrollView>
+            </com.handmark.pulltorefresh.library.PullToRefreshScrollView>
         </LinearLayout>
     </LinearLayout>
 

@@ -37,4 +37,20 @@
     <string name="demovalue">Large</string>
     <string name="yimago">Menstruation Go</string>
     <string name="tasksnumber">12</string>
+    
+    <string name="lovename">Make Love</string>
+    <string name="toolname">Use Tool</string>
+    <string name="medicinename">Use Medicine</string>
+    <string name="yimacomes">Menstruation Come</string>
+    <string name="basictempdemo">37.5</string>
+    
+     <string name="plan">Pregnant Plan</string>
+    <string name="toolsetting">Tools</string>
+    <string name="yimasetting">Menstruation Settings</string>
+    <string name="sharesetting">Share Setting</string>
+    <string name="backupsetting">BackUp</string>
+    <string name="feedbacksetting">Feedback and Advice</string>
+    <string name="aboutsetting">About Us</string>
+    <string name="jinjian">Professor \nSay</string>
+    <string name="updatetime">更新时间</string>
 </resources>

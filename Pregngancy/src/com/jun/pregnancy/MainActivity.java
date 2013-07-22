@@ -2,9 +2,13 @@ package com.jun.pregnancy;
 
 import java.util.Date;
 
+import com.handmark.pulltorefresh.library.PullToRefreshBase;
+import com.handmark.pulltorefresh.library.PullToRefreshScrollView;
+import com.handmark.pulltorefresh.library.PullToRefreshBase.OnRefreshListener;
 import android.app.Activity;
 import android.content.Intent;
 import android.graphics.PixelFormat;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
 import android.util.Log;
@@ -15,12 +19,9 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.View.OnTouchListener;
 import android.view.ViewGroup.LayoutParams;
-import android.view.ViewTreeObserver;
-import android.view.ViewTreeObserver.OnGlobalLayoutListener;
 import android.view.WindowManager;
 import android.view.animation.Animation;
 import android.view.animation.Animation.AnimationListener;
-import android.view.animation.AnimationUtils;
 import android.view.animation.TranslateAnimation;
 import android.widget.Button;
 import android.widget.FrameLayout;
@@ -28,12 +29,12 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.PopupWindow;
 import android.widget.RelativeLayout;
+import android.widget.ScrollView;
 
 public class MainActivity extends Activity implements AnimationListener {
 
 	private static final int CASE_PLAN = 0;
 	private static final int CASE_ABOUT = 5;
-	private static final int CASE_ADVICE = 4;
 	private static final int CASE_SHARE = 2;
 	private static final int CASE_YIMASETTING = 1;
 	private static final int CASE_BACKUP = 3;
@@ -53,6 +54,8 @@ public class MainActivity extends Activity implements AnimationListener {
 	FrameLayout mFloatLayout;
 	Button mFloatButton;
 	ImageView mDelete;
+	PullToRefreshScrollView mPullRefreshScrollView;
+	ScrollView mScrollView;
 	AnimParams animParams = new AnimParams();
 
 	class ClickListener implements OnClickListener {
@@ -102,6 +105,17 @@ public class MainActivity extends Activity implements AnimationListener {
 	}
 
 	private void initView() {
+		
+		mPullRefreshScrollView = (PullToRefreshScrollView) findViewById(R.id.contentview);
+		mPullRefreshScrollView.setOnRefreshListener(new OnRefreshListener<ScrollView>() {
+			
+			@Override
+			public void onRefresh(PullToRefreshBase<ScrollView> refreshView) {
+				new GetDataTask().execute();
+			}
+		});
+		
+		mScrollView = mPullRefreshScrollView.getRefreshableView();
 		DisplayMetrics metrics = new DisplayMetrics();
 		getWindowManager().getDefaultDisplay().getMetrics(metrics);
 		screenWidth = metrics.widthPixels;
@@ -123,6 +137,7 @@ public class MainActivity extends Activity implements AnimationListener {
 				new LinearLayout.LayoutParams(LayoutParams.MATCH_PARENT,
 						screenHeight - headerHeight));
 		createSuggestion();
+		
 //		maincontent.dispatchTouchEvent(this);
 
 	}
@@ -132,6 +147,30 @@ public class MainActivity extends Activity implements AnimationListener {
 		switchActivity(index);
 	}
 
+	
+	private class GetDataTask extends AsyncTask<Void, Void, String[]> {
+
+		@Override
+		protected String[] doInBackground(Void... params) {
+			// Simulates a background job.
+			
+			try {
+				Thread.sleep(4000);
+			} catch (InterruptedException e) {
+			}
+			return null;
+		}
+
+		@Override
+		protected void onPostExecute(String[] result) {
+			// Do some stuff here
+
+			// Call onRefreshComplete when the list has been refreshed.
+			mPullRefreshScrollView.onRefreshComplete();
+			super.onPostExecute(result);
+		}
+	}
+	
 	private void switchActivity(int index) {
 
 		switch (index) {
@@ -142,6 +181,7 @@ public class MainActivity extends Activity implements AnimationListener {
 			// about us
 			break;
 		case CASE_YIMASETTING:
+			
 			break;
 		case CASE_SHARE:
 			break;
@@ -152,12 +192,10 @@ public class MainActivity extends Activity implements AnimationListener {
 			break;
 		case CASE_TASK:
 			break;
-		case CASE_DELETE:
-			break;
 		default:
 			break;
 		}
-		 overridePendingTransition(R.anim.push_up_in, 0);
+		overridePendingTransition(R.anim.push_up_in, 0);
 
 	}
 
@@ -279,7 +317,6 @@ public class MainActivity extends Activity implements AnimationListener {
 	protected void onStart() {
 		super.onStart();
 		System.out.println("main-----------onStart");
-		
 
 	}
 

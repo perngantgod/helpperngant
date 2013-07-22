@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/left_margin_adviceheader"
+        android:background="@color/lightblue" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/todaydetails"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <com.jun.pregnancy.views.SmoothScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/settingbackground"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <ImageView
+                        android:id="@+id/tmicons"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/left_margin"
+                        android:src="@drawable/tempicon" >
+                    </ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/left_margin"
+                        android:layout_toRightOf="@id/tmicons"
+                        android:text="@string/stringtemp" />
+
+                    <ImageView
+                        android:id="@+id/cellbit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/left_margin"
+                        android:src="@drawable/celsius" />
+
+                    <TextView
+                        android:id="@+id/todaytemvalue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/left_margin"
+                        android:layout_toLeftOf="@id/cellbit"
+                        android:text="@string/stringtemp_value" />
+                </RelativeLayout>
+
+                <!-- WEIGHT VALUE -->
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/left_margin" >
+
+                    <ImageView
+                        android:id="@+id/weicons"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/left_margin"
+                        android:src="@drawable/weightscale" >
+                    </ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/left_margin"
+                        android:layout_toRightOf="@id/weicons"
+                        android:text="@string/weight_name" />
+
+                    <TextView
+                        android:id="@+id/weightbits"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/left_margin"
+                        android:text="@string/weightbit" >
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/todayweightvalue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/left_margin"
+                        android:layout_toLeftOf="@id/weightbits"
+                        android:text="@string/stringtemp_value" />
+                </RelativeLayout>
+
+                <!-- LH VALUE -->
+                <!--
+            RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="@dimen/left_margin"
+                    android:text="@string/lh_name" />
+
+                <TextView
+                    android:id="@+id/weightbits"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/left_margin"
+                    android:text="@string/weightbit"
+                    ></TextView>
+                <TextView
+                    android:id="@+id/todayweightvalue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/left_margin"
+                    android:layout_toLeftOf="@id/weightbits"
+                    android:text="@string/stringtemp_value" />
+            </RelativeLayout
+                -->
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical" >
+
+                <!-- Coming -->
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <ImageView
+                        android:id="@+id/comeicons"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/left_margin"
+                        android:src="@drawable/down3" >
+                    </ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/left_margin"
+                        android:layout_toRightOf="@id/comeicons"
+                        android:text="@string/yimacomes" />
+
+                    <ImageView
+                        android:id="@+id/comeicon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/left_margin"
+                        android:src="@drawable/icon_radio_disable" />
+                </RelativeLayout>
+
+                <!-- Going -->
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/left_margin" >
+
+                    <ImageView
+                        android:id="@+id/goicons"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/left_margin"
+                        android:src="@drawable/up2" >
+                    </ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/left_margin"
+                        android:layout_toRightOf="@id/goicons"
+                        android:text="@string/yimago" />
+
+                    <ImageView
+                        android:id="@+id/goicon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/left_margin"
+                        android:src="@drawable/icon_radio_disable" >
+                    </ImageView>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical" >
+
+                <!-- mode -->
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/left_margin"
+                        android:text="@string/mood" />
+
+                    <ImageView
+                        android:id="@+id/modeicon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/left_margin" />
+                </RelativeLayout>
+
+                <!-- Love VALUE -->
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/left_margin" >
+
+                    <ImageView
+                        android:id="@+id/likeicon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/left_margin"
+                        android:src="@drawable/like" >
+                    </ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/left_margin"
+                        android:layout_toRightOf="@id/likeicon"
+                        android:text="@string/lovename" />
+
+                    <ImageView
+                        android:id="@+id/lovebits"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/left_margin"
+                        android:src="@drawable/icon_radio_disable" >
+                    </ImageView>
+                </RelativeLayout>
+
+                <!-- love with tools -->
+
+                <RelativeLayout
+                    android:id="@+id/toollove"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/left_margin" >
+
+                    <ImageView
+                        android:id="@+id/ticon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/left_margin"
+                        android:src="@drawable/condom" >
+                    </ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/left_margin"
+                        android:layout_toRightOf="@id/ticon"
+                        android:text="@string/toolname" />
+
+                    <ImageView
+                        android:id="@+id/toolsbits"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/left_margin"
+                        android:src="@drawable/icon_radio_disable" >
+                    </ImageView>
+                </RelativeLayout>
+
+                <!-- love with medicine -->
+
+                <RelativeLayout
+                    android:id="@+id/medlove"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/left_margin" >
+
+                    <ImageView
+                        android:id="@+id/medicon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/left_margin"
+                        android:src="@drawable/mde" >
+                    </ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/left_margin"
+                        android:layout_toRightOf="@id/medicon"
+                        android:text="@string/medicinename" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/left_margin"
+                        android:src="@drawable/icon_radio_disable" >
+                    </ImageView>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </com.jun.pregnancy.views.SmoothScrollView>
+
+</LinearLayout>

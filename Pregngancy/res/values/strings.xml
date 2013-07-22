@@ -1,0 +1,52 @@
+<resources>
+
+    <string name="app_name">Pregnancy</string>
+    <string name="pull_to_refresh_tap_label">pull down to refresh...</string>
+    <string name="username">daishidaishui</string>
+    <string name="datetime">2013-06-01</string>
+    <string name="adviceheader">Professional Suggestions</string>
+    <string name="startnoupdate">No updates</string>
+    <string name="onlywifi">only can be updated when has wifi</string>
+    <string name="timeout">timeout</string>
+    <string name="markword">Perngant Help\nTech for Perngant</string>
+    <string name="startmark">Honey\nYou come to this app at the first time, please tell us about your mentr</string>
+    <string name="yimacome">When menstruation comes last time</string>
+    <string name="howmany">Days of menstruation comes pertime</string>
+    <string name="next">Next</string>
+    <string name="daybit">days</string>
+    <string name="advice">专家建议：测量基础体温的最佳时间是睡足6小时候的自然醒状态。</string>
+    <string name="enterwords1">Please enter the date of mentr comes last time</string>
+    <string name="sure">OK</string>
+    <string name="enterwords2">Input the option</string>
+    <string name="unknow">Unknown</string>
+    <string name="basictempdemo">37.5</string>
+    <string name="weightbit">kg</string>
+    <string name="estimatestring">Estimation</string>
+    <string name="distances">Days to start next menstruation</string>
+    <string name="weight_name">Weight</string>
+    <string name="period_name"></string>
+    <string name="stringtemp_value">37.5</string>
+    <string name="stringtemp">Basic Temp</string>
+    <string name="todaydetails">Today Marks</string>
+    <string name="chartdetails">Chart Details</string>
+    <string name="demovalue">Large</string>
+    <string name="yimago">Menstruation Go</string>
+    <string name="mood">Mood</string>
+    <string name="lovename">Make Love</string>
+    <string name="toolname">Use Tool</string>
+    <string name="medicinename">Use Medicine</string>
+    <string name="yimacomes">Menstruation Come</string>
+    <string name="tasksnumber">12</string>
+    <string name="ave_days">"Days of menstruation's staying"</string>
+    <string name="todayperngant">Today\&apos;s probability for Prengancy</string>
+    <string name="plan">Pregnant Plan</string>
+    <string name="toolsetting">Tools</string>
+    <string name="yimasetting">Menstruation Settings</string>
+    <string name="sharesetting">Share Setting</string>
+    <string name="backupsetting">BackUp</string>
+    <string name="feedbacksetting">Feedback and Advice</string>
+    <string name="aboutsetting">About Us</string>
+    <string name="jinjian">Professor \nSay</string>
+    
+    
+</resources>

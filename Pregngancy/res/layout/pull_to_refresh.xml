@@ -1,0 +1,654 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainvalues"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:saveEnabled="true" >
+
+    <LinearLayout
+        android:id="@+id/settingcontent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/settingbackground"
+        android:orientation="vertical"
+        android:saveEnabled="true" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/left_margin_advice" >
+
+            <ImageView
+                android:id="@+id/image_plan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/settings" >
+            </ImageView>
+
+            <TextView
+                android:id="@+id/plantexts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/left_margin"
+                android:layout_toRightOf="@id/image_plan"
+                android:text="@string/plan"
+                android:textColor="@color/black" >
+            </TextView>
+
+            <ImageView
+                android:id="@+id/planicon"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/top_margin_advice"
+                android:layout_toRightOf="@id/plantexts"
+                android:onClick="onClick"
+                android:src="@drawable/icon_radio_disable"
+                android:tag="1" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="28dp"
+            android:background="@color/grey" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/left_margin"
+                android:text="@string/toolsetting"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/yimaset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/left_margin"
+            android:onClick="onClick"
+            android:tag="2" >
+
+            <ImageView
+                android:id="@+id/yimasetting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/settings" >
+            </ImageView>
+
+            <TextView
+                android:id="@+id/yimatexts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/left_margin"
+                android:layout_toRightOf="@id/yimasetting"
+                android:text="@string/yimasetting"
+                android:textColor="@color/black" >
+            </TextView>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@color/grey" >
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/shares"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/left_margin"
+            android:onClick="onClick"
+            android:tag="3" >
+
+            <ImageView
+                android:id="@+id/sharesetting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/settings" >
+            </ImageView>
+
+            <TextView
+                android:id="@+id/sharetexts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/left_margin"
+                android:layout_toRightOf="@id/sharesetting"
+                android:text="@string/sharesetting"
+                android:textColor="@color/black" >
+            </TextView>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@color/grey" >
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/backups"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/left_margin"
+            android:onClick="onClick"
+            android:tag="4" >
+
+            <ImageView
+                android:id="@+id/backupsetting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/settings" >
+            </ImageView>
+
+            <TextView
+                android:id="@+id/backtexts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/left_margin"
+                android:layout_toRightOf="@id/backupsetting"
+                android:text="@string/backupsetting"
+                android:textColor="@color/black" >
+            </TextView>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@color/grey" >
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/feedback"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/left_margin"
+            android:onClick="onClick"
+            android:tag="5" >
+
+            <ImageView
+                android:id="@+id/feedbacksetting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/settings" >
+            </ImageView>
+
+            <TextView
+                android:id="@+id/feedbacktexts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/left_margin"
+                android:layout_toRightOf="@id/feedbacksetting"
+                android:text="@string/feedbacksetting"
+                android:textColor="@color/black" >
+            </TextView>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@color/grey" >
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/aboutus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/left_margin"
+            android:onClick="onClick"
+            android:tag="6" >
+
+            <ImageView
+                android:id="@+id/aboutsetting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/settings" >
+            </ImageView>
+
+            <TextView
+                android:id="@+id/abouttexts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/left_margin"
+                android:layout_toRightOf="@id/aboutsetting"
+                android:text="@string/aboutsetting"
+                android:textColor="@color/black" >
+            </TextView>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:saveEnabled="true" >
+
+        <RelativeLayout
+            android:id="@+id/headermain"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/left_margin_adviceheader"
+            android:background="@color/lightblue" >
+
+            <ImageView
+                android:id="@+id/setting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/left_margin"
+                android:src="@drawable/more" >
+            </ImageView>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/username"
+                    android:textColor="@color/white" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/datetime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/datetime"
+                    android:textColor="@color/white" >
+                </TextView>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:onClick="onClick"
+                android:src="@drawable/edit"
+                android:tag="8" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/splash_back"
+            android:orientation="vertical" >
+
+            <com.jun.pregnancy.views.SmoothScrollView
+                android:id="@+id/contentview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true"
+                android:scrollbars="none" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:id="@+id/currentmain"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/background" 
+                        android:layout_marginLeft="@dimen/left_margin_advice"
+                        android:layout_marginRight="@dimen/right_margin_advice" >
+
+                        
+
+
+                       
+
+                        <!-- rate -->
+
+                        <RelativeLayout
+                            android:id="@+id/rateshow"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginLeft="@dimen/left_margin"
+                            android:layout_marginTop="@dimen/left_margin"
+                            >
+
+                            <ImageView
+                                android:id="@+id/todayper"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:src="@drawable/settings" >
+                            </ImageView>
+
+                            <TextView
+                                android:id="@+id/value"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="@dimen/left_margin_advice"
+                                android:layout_toRightOf="@id/todayper"
+                                android:text="@string/demovalue"
+                                android:textColor="@color/text_colors" />
+                        </RelativeLayout>
+                        
+                        
+                         <!-- days -->
+
+                        <RelativeLayout
+                            android:id="@+id/daysshow"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_above="@id/rateshow"
+                            android:layout_marginLeft="@dimen/left_margin"
+                            >
+
+                            <ImageView
+                                android:id="@+id/daysleft"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:src="@drawable/settings" >
+                            </ImageView>
+
+                            <TextView
+                                android:id="@+id/realleftday"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="@dimen/left_margin_advice"
+                                android:layout_toRightOf="@id/daysleft"
+                                android:text="20"
+                                android:textColor="@color/text_colors"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginLeft="@dimen/left_margin_advice"
+                                android:layout_toRightOf="@id/realleftday"
+                                android:text="@string/daybit"
+                                android:textColor="@color/text_colors"
+                                android:textStyle="bold" >
+                            </TextView>
+                        </RelativeLayout>
+                    </RelativeLayout>
+                    <!-- esitmate chart -->
+
+                    <LinearLayout
+                        android:id="@+id/estimate"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/estimate_height"
+                        android:layout_marginBottom="@dimen/left_margin_advice"
+                        android:layout_marginLeft="@dimen/left_margin_advice"
+                        android:layout_marginRight="@dimen/right_margin_advice"
+                        android:layout_marginTop="@dimen/left_margin_advice"
+                        android:background="@drawable/background"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/left_margin"
+                            android:text="@string/estimatestring"
+                            android:textColor="@color/text_colors" >
+                        </TextView>
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0.9dp"
+                            android:background="@color/lightgrey" >
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/estimatechart" >
+                        </FrameLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/todayinfo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/left_margin_advice"
+                        android:layout_marginLeft="@dimen/left_margin_advice"
+                        android:layout_marginRight="@dimen/right_margin_advice"
+                        android:background="@drawable/background"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/left_margin"
+                            android:text="@string/todaydetails"
+                            android:textColor="@color/text_colors" />
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0.9dp"
+                            android:background="@color/lightgrey" >
+                        </FrameLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/perngantvalue"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="@string/demovalue"
+                                android:textColor="@color/text_colors"
+                                android:textSize="20sp" >
+                            </TextView>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical" >
+
+                                <RelativeLayout
+                                    android:id="@+id/temptoday"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1" >
+
+                                    <TextView
+                                        android:id="@+id/view1"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_centerVertical="true"
+                                        android:maxEms="6"
+                                        android:singleLine="true"
+                                        android:text="@string/stringtemp"
+                                        android:textColor="@color/text_colors"
+                                        android:textSize="12sp" >
+                                    </TextView>
+
+                                    <TextView
+                                        android:id="@+id/view1_value"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerVertical="true"
+                                        android:layout_marginLeft="@dimen/left_margin_advice"
+                                        android:layout_toRightOf="@id/view1"
+                                        android:text="@string/stringtemp_value"
+                                        android:textColor="@color/text_colors" >
+                                    </TextView>
+
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerVertical="true"
+                                        android:layout_marginLeft="@dimen/left_margin"
+                                        android:layout_toRightOf="@id/view1_value"
+                                        android:src="@drawable/celsius" />
+
+                                    <FrameLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0.5dp"
+                                        android:layout_alignParentBottom="true"
+                                        android:background="@color/lightgrey" >
+                                    </FrameLayout>
+                                </RelativeLayout>
+
+                                <!-- weight -->
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1" >
+
+                                    <TextView
+                                        android:id="@+id/view2"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_centerVertical="true"
+                                        android:text="@string/weight_name"
+                                        android:textColor="@color/text_colors"
+                                        android:textSize="12sp" >
+                                    </TextView>
+
+                                    <TextView
+                                        android:id="@+id/view2_value"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerVertical="true"
+                                        android:layout_marginLeft="@dimen/left_margin_advice"
+                                        android:layout_toRightOf="@id/view2"
+                                        android:text="@string/stringtemp_value"
+                                        android:textColor="@color/text_colors" >
+                                    </TextView>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerVertical="true"
+                                        android:layout_marginLeft="@dimen/left_margin"
+                                        android:layout_toRightOf="@id/view2_value"
+                                        android:text="@string/weightbit"
+                                        android:textColor="@color/text_colors" >
+                                    </TextView>
+
+                                    <FrameLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0.5dp"
+                                        android:layout_alignParentBottom="true"
+                                        android:background="@color/lightgrey" >
+                                    </FrameLayout>
+                                </RelativeLayout>
+                                <!-- period -->
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1" >
+
+                                    <TextView
+                                        android:id="@+id/view3"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_centerVertical="true"
+                                        android:text="@string/period_name"
+                                        android:textColor="@color/text_colors"
+                                        android:textSize="12sp" >
+                                    </TextView>
+
+                                    <TextView
+                                        android:id="@+id/view3_value"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerVertical="true"
+                                        android:layout_marginLeft="@dimen/left_margin_advice"
+                                        android:layout_toRightOf="@id/view3"
+                                        android:text="@string/stringtemp_value"
+                                        android:textColor="@color/text_colors" >
+                                    </TextView>
+                                </RelativeLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <!-- chart -->
+
+                    <LinearLayout
+                        android:id="@+id/chartinfo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/left_margin_advice"
+                        android:layout_marginLeft="@dimen/left_margin_advice"
+                        android:layout_marginRight="@dimen/right_margin_advice"
+                        android:background="@drawable/background"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/left_margin"
+                            android:text="@string/chartdetails"
+                            android:textColor="@color/text_colors" />
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0.9dp"
+                            android:background="@color/lightgrey" >
+                        </FrameLayout>
+
+                        <LinearLayout
+                            android:id="@+id/tempchart"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/estimatechart"
+                            android:orientation="vertical" >
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/weightchart"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/estimatechart"
+                            android:orientation="vertical" >
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/lhchart"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/estimatechart"
+                            android:orientation="vertical" >
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </com.jun.pregnancy.views.SmoothScrollView>
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

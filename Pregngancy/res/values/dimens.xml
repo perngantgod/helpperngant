@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="left_margin">5dp</dimen>
+    <dimen name="adviceheight">100dp</dimen>
+    <dimen name="left_margin_advice">10dp</dimen>
+    <dimen name="right_margin_advice">10dp</dimen>
+    <dimen name="top_margin_advice">25dp</dimen>
+    <dimen name="left_margin_adviceheader">50dp</dimen>
+    <dimen name="show_margin">30dp</dimen>
+    <dimen name="estimate_height">120dp</dimen>
+    <dimen name="estimatechart">80dp</dimen>
+</resources>

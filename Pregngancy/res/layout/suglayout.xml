@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/advice"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/adviceheight"
+    android:layout_marginLeft="@dimen/left_margin_advice"
+    android:layout_marginRight="@dimen/right_margin_advice" >
+
+    <Button
+       android:id="@+id/suggestionbutton"
+        android:layout_width="@dimen/left_margin_adviceheader"
+        android:layout_height="@dimen/left_margin_adviceheader"
+        android:background="@drawable/suggest"
+        android:text="@string/jinjian"
+        android:layout_gravity="center"
+        android:textSize="12sp"
+        android:textColor="@color/text_colors">
+    </Button>
+    <LinearLayout
+        android:id="@+id/suggestions"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/adviceheader"
+            android:textColor="@color/text_colors"
+            android:textSize="16sp" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0.9dp"
+            android:background="@color/lightgrey" />
+
+        <com.jun.pregnancy.views.SmoothScrollView
+            android:id="@+id/special"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/show_margin"
+            android:layout_marginLeft="@dimen/left_margin"
+            android:background="@android:color/transparent" >
+        </com.jun.pregnancy.views.SmoothScrollView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/dele_advice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/trash"
+                android:clickable="false"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/numberTask"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:onClick="onClick"
+        android:tag="10"
+        android:visibility="gone"
+        >
+
+        <TextView
+            android:id="@+id/tasknumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/circle"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/tasksnumber"
+            android:textColor="@color/text_colors" >
+        </TextView>
+    </RelativeLayout>
+
+</FrameLayout>

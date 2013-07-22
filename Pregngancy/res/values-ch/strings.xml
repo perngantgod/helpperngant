@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Pregnancy</string>
+    <string name="pull_to_refresh_tap_label">向下拖动刷新...</string>
+    <string name="username">呆石呆水</string>
+    <string name="datetime">2013-06-01</string>
+    <string name="adviceheader">专业建议</string>
+    <string name="startnoupdate">没有更新</string>
+    <string name="onlywifi">没有wifi连接， 只在wifi下更新</string>
+    <string name="timeout">超时</string>
+    <string name="markword">幸孕草\n科学助孕</string>
+    <string name="startmark">亲\n您是第一次使用，请填写以下信息，不要嫌麻烦奥</string>
+    <string name="yimacome">最近一次姨妈访问时间</string>
+    <string name="ave_days">姨妈逗留时间</string>
+    <string name="howmany">姨妈多久来一次</string>
+    <string name="next">下一步</string>
+    <string name="daybit">天</string>
+    <string name="advice">专家建议：测量基础体温的最佳时间是睡足6小时候的自然醒状态。</string>
+    <string name="enterwords1">请输入最近一次经期开始时间</string>
+    <string name="sure">确定</string>
+    <string name="enterwords2">输入选择的选项</string>
+    <string name="unknow">无</string>
+    <string name="mood"></string>
+    <string name="todayperngant"></string>
+    
+    
+    
+    <string name="weightbit">kg</string>
+    <string name="estimatestring">Estimation</string>
+    <string name="distances">Days to start next mentr</string>
+    <string name="weight_name">Weight</string>
+    <string name="period_name"></string>
+    <string name="stringtemp_value">37.5</string>
+    <string name="stringtemp">Basic Temp</string>
+    <string name="todaydetails">Today Marks</string>
+    <string name="chartdetails">Chart Details</string>
+    <string name="demovalue">Large</string>
+    <string name="yimago">Menstruation Go</string>
+    <string name="tasksnumber">12</string>
+</resources>

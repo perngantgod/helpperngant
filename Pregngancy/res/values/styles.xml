@@ -13,7 +13,7 @@
     </style>
 
     <!-- Application theme. -->
-        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    <!-- All customizations that are NOT specific to a particular API-level can go here. -->
 
     <style name="maindiarytext1"></style>
 
@@ -42,11 +42,36 @@
         <!-- 模糊 -->
     </style>
 
-    <style name="Transparent ">
+    <style name="Transparent" parent="android:Theme.Light">
         <item name="android:windowBackground">@color/transparent_background</item>
         <item name="android:windowNoTitle">true</item>
         <item name="android:windowIsTranslucent">true</item>
         <item name="android:windowAnimationStyle">@+android:style/Animation.Translucent</item>
+    </style>
+
+    <style name="MainTheme" parent="android:Theme.Light">
+        <item name="android:windowNoTitle">true</item>
+        <!-- item name="android:windowIsTranslucent">true</item -->
+    </style>
+
+    <style name="InOut" mce_bogus="1" parent="@android:style/Theme.Light">
+        <item name="android:windowAnimationStyle">@style/AnimationActivity</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="AnimationActivity"  parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/push_up_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/push_up_out</item>
+        <item name="android:activityOpenExitAnimation">@null</item>
+        <item name="android:activityCloseEnterAnimation">@null</item>
+        <item name="android:taskOpenEnterAnimation">@anim/push_up_in</item>
+        <item name="android:taskOpenExitAnimation">@null</item>
+        <item name="android:taskCloseEnterAnimation">@null</item>
+        <item name="android:taskCloseExitAnimation">@anim/push_up_out</item>
+        <item name="android:taskToFrontEnterAnimation">@anim/push_up_in</item>
+        <item name="android:taskToFrontExitAnimation">@null</item>
+        <item name="android:taskToBackEnterAnimation">@null</item>
+        <item name="android:taskToBackExitAnimation">@anim/push_up_out</item>
     </style>
 
 </resources>

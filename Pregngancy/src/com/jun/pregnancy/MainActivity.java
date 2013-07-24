@@ -40,10 +40,10 @@ public class MainActivity extends Activity implements AnimationListener {
 	private static final int CASE_BACKUP = 3;
 	private static final int CASE_EDIT = 7;
 	private static final int CASE_TASK = 9;
-	private static final int CASE_DELETE = 8;
 	View maincontent;
 	View settingcontent;
 	boolean menuOut = false;
+	boolean settingPress = false;
 	PopupWindow pop = null;
 	int screenWidth;
 	int headerHeight;
@@ -62,6 +62,7 @@ public class MainActivity extends Activity implements AnimationListener {
 		@Override
 		public void onClick(View v) {
 			System.out.println("onClick " + new Date());
+			System.out.println("menuo " + menuOut);
 			MainActivity me = MainActivity.this;
 			// Context context = me;
 			Animation anim;
@@ -105,16 +106,18 @@ public class MainActivity extends Activity implements AnimationListener {
 	}
 
 	private void initView() {
-		
+
 		mPullRefreshScrollView = (PullToRefreshScrollView) findViewById(R.id.contentview);
-		mPullRefreshScrollView.setOnRefreshListener(new OnRefreshListener<ScrollView>() {
-			
-			@Override
-			public void onRefresh(PullToRefreshBase<ScrollView> refreshView) {
-				new GetDataTask().execute();
-			}
-		});
-		
+		mPullRefreshScrollView
+				.setOnRefreshListener(new OnRefreshListener<ScrollView>() {
+
+					@Override
+					public void onRefresh(
+							PullToRefreshBase<ScrollView> refreshView) {
+						new GetDataTask().execute();
+					}
+				});
+
 		mScrollView = mPullRefreshScrollView.getRefreshableView();
 		DisplayMetrics metrics = new DisplayMetrics();
 		getWindowManager().getDefaultDisplay().getMetrics(metrics);
@@ -137,8 +140,6 @@ public class MainActivity extends Activity implements AnimationListener {
 				new LinearLayout.LayoutParams(LayoutParams.MATCH_PARENT,
 						screenHeight - headerHeight));
 		createSuggestion();
-		
-//		maincontent.dispatchTouchEvent(this);
 
 	}
 
@@ -147,13 +148,12 @@ public class MainActivity extends Activity implements AnimationListener {
 		switchActivity(index);
 	}
 
-	
 	private class GetDataTask extends AsyncTask<Void, Void, String[]> {
 
 		@Override
 		protected String[] doInBackground(Void... params) {
 			// Simulates a background job.
-			
+
 			try {
 				Thread.sleep(4000);
 			} catch (InterruptedException e) {
@@ -170,7 +170,7 @@ public class MainActivity extends Activity implements AnimationListener {
 			super.onPostExecute(result);
 		}
 	}
-	
+
 	private void switchActivity(int index) {
 
 		switch (index) {
@@ -179,9 +179,10 @@ public class MainActivity extends Activity implements AnimationListener {
 			break;
 		case CASE_ABOUT:
 			// about us
+			aboutUs();
 			break;
 		case CASE_YIMASETTING:
-			
+			setYima();
 			break;
 		case CASE_SHARE:
 			break;
@@ -191,56 +192,30 @@ public class MainActivity extends Activity implements AnimationListener {
 			enterEdit();
 			break;
 		case CASE_TASK:
+			// new activity for task
+			showTask();
 			break;
 		default:
 			break;
 		}
-		overridePendingTransition(R.anim.push_up_in, 0);
-
+		
 	}
 
-	// private void creatAbout() {
-	// LayoutInflater layoutInflater = (LayoutInflater) (this)
-	// .getSystemService(LAYOUT_INFLATER_SERVICE);
-	//
-	// View popview = layoutInflater.inflate(R.layout.interval, null);
-	//
-	// pop = new PopupWindow(popview, windowwidth / 2, windowheight / 2);
-	//
-	// Button bOK = (Button) popview.findViewById(R.id.button1);
-	// final NumberPicker number = (NumberPicker)
-	// popview.findViewById(R.id.numberPicker1);
-	// number.setMinValue(0);
-	// number.setMaxValue(1440);
-	// popWindow.update();
-	// popWindow.setFocusable(true);
-	// popWindow.setTouchable(true);
-	// popWindow.setOutsideTouchable(true);
-	// popWindow.setBackgroundDrawable(new BitmapDrawable());
-	// popWindow.showAtLocation(this.findViewById(R.id.mainscreen),
-	// Gravity.CENTER_HORIZONTAL, 0,
-	// 0);
-	// final SharedPreferences sharedPrefrences =
-	// this.getSharedPreferences("interval",
-	// MODE_WORLD_WRITEABLE);
-	//
-	// number.setValue(sharedPrefrences.getInt("INTERVAL", 0));
-	//
-	// bOK.setOnClickListener(new OnClickListener() {
-	//
-	// @Override
-	// public void onClick(View arg0) {
-	// SharedPreferences.Editor editor = sharedPrefrences.edit();
-	// int numbers = number.getValue();
-	// Log.i("Result", "interval time is :" + numbers);
-	// editor.putInt("INTERVAL", numbers);
-	// editor.commit();
-	// popWindow.dismiss();
-	// }
-	//
-	// });
-	//
-	// }
+	private void aboutUs() {
+		settingPress = true;
+		Intent intent = new Intent(this, AboutActivity.class);
+		startActivity(intent);
+	}
+
+	private void setYima() {
+		Intent intent = new Intent(this, SetYimaActivity.class);
+		startActivity(intent);
+	}
+
+	private void showTask() {
+		Intent intent = new Intent(this, TaskActivity.class);
+		startActivity(intent);
+	}
 
 	protected void enterEdit() {
 		Intent intent = new Intent(this, EditActivity.class);
@@ -293,6 +268,11 @@ public class MainActivity extends Activity implements AnimationListener {
 	protected void onDestroy() {
 		super.onDestroy();
 		System.out.println("main-----------onDestroy");
+		
+		// remove layout to avoid leak window
+		if(mFloatLayout != null && mWindowManager != null){
+			mWindowManager.removeView(mFloatLayout);
+		}
 	}
 
 	@Override
@@ -305,6 +285,9 @@ public class MainActivity extends Activity implements AnimationListener {
 	protected void onRestart() {
 		super.onRestart();
 		System.out.println("main-----------onRestart");
+		if (menuOut && settingPress) {
+			settingPress = false;
+		}
 	}
 
 	@Override
@@ -339,7 +322,6 @@ public class MainActivity extends Activity implements AnimationListener {
 
 		mFloatLayout = (FrameLayout) inflater.inflate(R.layout.suglayout, null);
 		mWindowManager.addView(mFloatLayout, wmParams);
-		// setContentView(R.layout.main);
 		mFloatButton = (Button) mFloatLayout
 				.findViewById(R.id.suggestionbutton);
 

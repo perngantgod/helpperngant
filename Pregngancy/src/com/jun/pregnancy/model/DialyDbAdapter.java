@@ -1,6 +1,5 @@
 package com.jun.pregnancy.model;
 
-
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
@@ -96,6 +95,7 @@ public class DialyDbAdapter {
 
 	/**
 	 * Create a new note using the title and body provided.
+	 * 
 	 * @param weight
 	 * @param temp
 	 * @param lh
@@ -147,7 +147,9 @@ public class DialyDbAdapter {
 	public Cursor fetchAllNotes() {
 
 		return mDb.query(DATABASE_TABLE, new String[] { KEY_ROWID, KEY_WEIGHT,
-				KEY_TEMP, KEY_LH, KEY_TEXT, KEY_MOOD, KEY_DATE, KEY_PERIOD, KEY_LOVE, KEY_MEDICINE, KEY_TOOL }, null, null, null, null, null);
+				KEY_TEMP, KEY_LH, KEY_TEXT, KEY_MOOD, KEY_DATE, KEY_PERIOD,
+				KEY_LOVE, KEY_MEDICINE, KEY_TOOL }, null, null, null, null,
+				null);
 	}
 
 	/**
@@ -164,8 +166,9 @@ public class DialyDbAdapter {
 		Cursor mCursor =
 
 		mDb.query(true, DATABASE_TABLE, new String[] { KEY_ROWID, KEY_WEIGHT,
-				KEY_TEMP, KEY_LH, KEY_TEXT, KEY_MOOD, KEY_DATE, KEY_PERIOD, KEY_LOVE, KEY_MEDICINE, KEY_TOOL  }, KEY_ROWID + "=" + rowId, null, null, null, null,
-				null);
+				KEY_TEMP, KEY_LH, KEY_TEXT, KEY_MOOD, KEY_DATE, KEY_PERIOD,
+				KEY_LOVE, KEY_MEDICINE, KEY_TOOL }, KEY_ROWID + "=" + rowId,
+				null, null, null, null, null);
 		if (mCursor != null) {
 			mCursor.moveToFirst();
 		}
@@ -186,11 +189,10 @@ public class DialyDbAdapter {
 	public boolean updateNoteOfTemp(long rowId, float temp) {
 		ContentValues args = new ContentValues();
 		args.put(KEY_TEMP, temp);
-		
+
 		return mDb.update(DATABASE_TABLE, args, KEY_ROWID + "=" + rowId, null) > 0;
 	}
-	
-	
+
 	/**
 	 * 
 	 * @param rowId
@@ -206,9 +208,9 @@ public class DialyDbAdapter {
 	 * @param tools
 	 * @return
 	 */
-	public boolean updateNote(long rowId, float weight, float temp, float lh, String text,
-			int mood, String dates, int love, int periods, int medicine,
-			int tools) {
+	public boolean updateNote(long rowId, float weight, float temp, float lh,
+			String text, int mood, String dates, int love, int periods,
+			int medicine, int tools) {
 		ContentValues args = new ContentValues();
 		args.put(KEY_WEIGHT, weight);
 		args.put(KEY_TEMP, temp);
@@ -221,7 +223,7 @@ public class DialyDbAdapter {
 		args.put(KEY_LOVE, love);
 		args.put(KEY_MEDICINE, medicine);
 		args.put(KEY_TOOL, tools);
-		
+
 		return mDb.update(DATABASE_TABLE, args, KEY_ROWID + "=" + rowId, null) > 0;
 	}
 }

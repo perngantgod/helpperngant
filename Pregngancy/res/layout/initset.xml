@@ -245,6 +245,64 @@
                     android:layout_height="0.5dp"
                     android:layout_below="@id/setaverage" >
                 </FrameLayout>
+                
+                <RelativeLayout
+                    android:id="@+id/setage"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/thirddiv" >
+
+                    <ImageView
+                        android:id="@+id/imageView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ages" />
+
+                    <ImageButton
+                        android:id="@+id/setage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/left_margin"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/forward" />
+
+                    <TextView
+                        android:id="@+id/averageTimeFSet"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/left_margin"
+                        android:layout_toLeftOf="@id/setage"
+                        android:text="28"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/imageView4"
+                        android:layout_toRightOf="@+id/imageView4"
+                        android:ems="10"
+                        android:text="@string/ages"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+                 <FrameLayout
+                    android:id="@+id/forthdiv"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_below="@id/setage" >
+                </FrameLayout>
+                
+                 
             </RelativeLayout>
         </ScrollView>
 

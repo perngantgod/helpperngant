@@ -5,9 +5,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
 
-public class AboutActivity extends Activity{
+public class AboutActivity extends Activity {
 
-	
 	class BackClickListener implements OnClickListener {
 
 		@Override
@@ -15,9 +14,11 @@ public class AboutActivity extends Activity{
 			finish();
 		}
 	};
+
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.aboutus);
-		findViewById(R.id.aboutback).setOnClickListener(new BackClickListener());
+		findViewById(R.id.aboutback)
+				.setOnClickListener(new BackClickListener());
 	}
 }

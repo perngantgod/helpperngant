@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" 
+    android:id="@+id/dialog_item"
+    android:background="@drawable/dialog_popup">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/left_margin"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/taskname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Task Name"
+            android:textColor="@color/black"
+            android:textSize="18sp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/tasktime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Task Time"
+            android:textColor="@color/black"
+            android:textSize="16sp" >
+        </TextView>
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/taskdetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/left_margin"
+        android:src="@drawable/settings" >
+    </ImageButton>
+
+</RelativeLayout>

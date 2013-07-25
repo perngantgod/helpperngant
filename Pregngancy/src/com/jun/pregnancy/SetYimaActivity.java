@@ -1,5 +1,7 @@
 package com.jun.pregnancy;
 
-public class SetYimaActivity {
+import android.app.Activity;
+
+public class SetYimaActivity extends Activity {
 
 }

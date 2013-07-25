@@ -38,7 +38,7 @@
     <string name="yimacomes">Menstruation Come</string>
     <string name="tasksnumber">12</string>
     <string name="ave_days">"Days of menstruation's staying"</string>
-    <string name="todayperngant">Today\&apos;s probability for Prengancy</string>
+    <string name="todaypernsgant">Today\&apos;s probability for Prengancy</string>
     <string name="plan">Pregnant Plan</string>
     <string name="toolsetting">Tools</string>
     <string name="yimasetting">Menstruation Settings</string>
@@ -48,6 +48,30 @@
     <string name="aboutsetting">About Us</string>
     <string name="jinjian">Professor \nSay</string>
     <string name="updatetime">Update Time</string>
+    <string name="ages">Age</string>
+    <string name="year_bit">years</string>
+    <string name="dysmenorrhea">Have Dysmenorrhea</string>
+    <string name="cycle_status">Status of Menstrual cycle</string>
+    <string name="cycle_state">normal</string>
+    <string name="liang">Menstrual flow</string>
+    <string name="flow_state">many</string>
+    <string name="color_mens">Menstrual Color</string>
+    <string name="colors_mens">drak red</string>
+    <string name="history_mens">Past History</string>
+    <string name="history_mens_dis">none</string>
+    <string name="login">Login</string>
+    <string name="forgetpasswd">ForgetPassword</string>
+    <string name="notregister">Not registered</string>
+    <string name="user">Account : Please Enter</string>
+    <string name="passwd">Password</string>
+    <string name="third_login">Use corprate website to login</string>
+    <string name="first_age">How old menstruations meet you at the first time</string>
     
+    <string name="todaytask">Tasks of Today</string>
+    <string name="detailtask">Task Details</string>
     
+    <string name="finish_text">Finish\nTask</string>
+    <string name="dele_text">Delete\nTask</string>
+            
+
 </resources>

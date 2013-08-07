@@ -680,245 +680,342 @@ containing a value of this type.
         public static final int top_margin_advice=0x7f060009;
     }
     public static final class drawable {
-        public static final int back=0x7f020000;
-        public static final int background=0x7f020001;
-        public static final int buttonstyle=0x7f020002;
-        public static final int calendar=0x7f020003;
-        public static final int celsius=0x7f020004;
-        public static final int circle=0x7f020005;
-        public static final int clock=0x7f020006;
-        public static final int come=0x7f020007;
-        public static final int condom=0x7f020008;
-        public static final int days=0x7f020009;
-        public static final int default_ptr_flip=0x7f02000a;
-        public static final int default_ptr_rotate=0x7f02000b;
-        public static final int down=0x7f02000c;
-        public static final int down3=0x7f02000d;
-        public static final int edit=0x7f02000e;
-        public static final int forward=0x7f02000f;
-        public static final int headback=0x7f020010;
-        public static final int ic_launcher=0x7f020011;
-        public static final int icon_radio_disable=0x7f020012;
-        public static final int icon_radio_enable=0x7f020013;
-        public static final int indicator_arrow=0x7f020014;
-        public static final int indicator_bg_bottom=0x7f020015;
-        public static final int indicator_bg_top=0x7f020016;
-        public static final int info=0x7f020017;
-        public static final int like=0x7f020018;
-        public static final int mainbackground=0x7f020019;
-        public static final int mde=0x7f02001a;
-        public static final int micro=0x7f02001b;
-        public static final int more=0x7f02001c;
-        public static final int opened_folder=0x7f02001d;
-        public static final int plus=0x7f02001e;
-        public static final int plus_bg=0x7f02001f;
-        public static final int popbg=0x7f020020;
-        public static final int reload=0x7f020021;
-        public static final int settings=0x7f020022;
-        public static final int splash_back=0x7f020023;
-        public static final int sub_bg=0x7f020024;
-        public static final int suggest=0x7f020025;
-        public static final int tempicon=0x7f020026;
-        public static final int trash=0x7f020027;
-        public static final int up=0x7f020028;
-        public static final int up2=0x7f020029;
-        public static final int user_female=0x7f02002a;
-        public static final int weightscale=0x7f02002b;
+        public static final int account_ic_oauth_qq=0x7f020000;
+        public static final int account_ic_oauth_sina=0x7f020001;
+        public static final int account_oauth_login_sliding_drawer_header=0x7f020002;
+        public static final int ages=0x7f020003;
+        public static final int back=0x7f020004;
+        public static final int background=0x7f020005;
+        public static final int bg_holo_light=0x7f020006;
+        public static final int buttonstyle=0x7f020007;
+        public static final int calendar=0x7f020008;
+        public static final int celsius=0x7f020009;
+        public static final int circle=0x7f02000a;
+        public static final int clock=0x7f02000b;
+        public static final int come=0x7f02000c;
+        public static final int condom=0x7f02000d;
+        public static final int contentbackground=0x7f02000e;
+        public static final int days=0x7f02000f;
+        public static final int default_ptr_flip=0x7f020010;
+        public static final int default_ptr_rotate=0x7f020011;
+        public static final int dialog_popup=0x7f020012;
+        public static final int down=0x7f020013;
+        public static final int down3=0x7f020014;
+        public static final int down4=0x7f020015;
+        public static final int edit=0x7f020016;
+        public static final int forward=0x7f020017;
+        public static final int headback=0x7f020018;
+        public static final int ic_launcher=0x7f020019;
+        public static final int icon_radio_disable=0x7f02001a;
+        public static final int icon_radio_enable=0x7f02001b;
+        public static final int indicator_arrow=0x7f02001c;
+        public static final int indicator_bg_bottom=0x7f02001d;
+        public static final int indicator_bg_top=0x7f02001e;
+        public static final int info=0x7f02001f;
+        public static final int like=0x7f020020;
+        public static final int main_background=0x7f020021;
+        public static final int mde=0x7f020022;
+        public static final int micro=0x7f020023;
+        public static final int more=0x7f020024;
+        public static final int opened_folder=0x7f020025;
+        public static final int plus=0x7f020026;
+        public static final int plus_bg=0x7f020027;
+        public static final int popbg=0x7f020028;
+        public static final int reload=0x7f020029;
+        public static final int settings=0x7f02002a;
+        public static final int sub_bg=0x7f02002b;
+        public static final int suggest=0x7f02002c;
+        public static final int tempicon=0x7f02002d;
+        public static final int trash=0x7f02002e;
+        public static final int up=0x7f02002f;
+        public static final int up2=0x7f020030;
+        public static final int user_female=0x7f020031;
+        public static final int weightscale=0x7f020032;
     }
     public static final class id {
-        public static final int aboutsetting=0x7f05006e;
-        public static final int abouttexts=0x7f05006f;
-        public static final int aboutus=0x7f05006d;
-        public static final int add=0x7f050058;
-        public static final int add_d=0x7f050052;
-        public static final int add_h=0x7f050040;
-        public static final int add_m=0x7f05004e;
-        public static final int add_min=0x7f050044;
-        public static final int add_y=0x7f05004a;
-        public static final int advice=0x7f050092;
-        public static final int aveargetime=0x7f050032;
-        public static final int averageTimeFSet=0x7f050034;
-        public static final int averageTimeFSetDay=0x7f050033;
-        public static final int backtexts=0x7f050069;
-        public static final int backups=0x7f050067;
-        public static final int backupsetting=0x7f050068;
+        public static final int aboutback=0x7f05000c;
+        public static final int aboutsetting=0x7f050081;
+        public static final int abouttexts=0x7f050082;
+        public static final int aboutus=0x7f050080;
+        public static final int add=0x7f05006b;
+        public static final int add_d=0x7f050065;
+        public static final int add_h=0x7f050053;
+        public static final int add_m=0x7f050061;
+        public static final int add_min=0x7f050057;
+        public static final int add_y=0x7f05005d;
+        public static final int advice=0x7f0500a5;
+        public static final int age_bit=0x7f0500ca;
+        public static final int aveargetime=0x7f050034;
+        public static final int averageTimeFSet=0x7f050036;
+        public static final int averageTimeFSetDay=0x7f050035;
+        public static final int backtexts=0x7f05007c;
+        public static final int backups=0x7f05007a;
+        public static final int backupsetting=0x7f05007b;
         public static final int both=0x7f050003;
-        public static final int button1=0x7f05005b;
-        public static final int button1_rt=0x7f050047;
-        public static final int button1_st=0x7f050055;
-        public static final int cellbit=0x7f05000d;
-        public static final int chartinfo=0x7f050088;
-        public static final int comeicon=0x7f050013;
-        public static final int comeicons=0x7f050012;
-        public static final int contentview=0x7f050076;
-        public static final int currentmain=0x7f050077;
-        public static final int datetime=0x7f050074;
-        public static final int days=0x7f050057;
-        public static final int daysleft=0x7f05007c;
-        public static final int daysshow=0x7f05007b;
-        public static final int dele_advice=0x7f050096;
-        public static final int delete=0x7f05005a;
-        public static final int delete_d=0x7f050054;
-        public static final int delete_h=0x7f050042;
-        public static final int delete_m=0x7f050050;
-        public static final int delete_min=0x7f050046;
-        public static final int delete_y=0x7f05004c;
+        public static final int button1=0x7f05006e;
+        public static final int button1_rt=0x7f05005a;
+        public static final int button1_st=0x7f050068;
+        public static final int button_task=0x7f0500b1;
+        public static final int cellbit=0x7f05000f;
+        public static final int chartinfo=0x7f05009b;
+        public static final int color_status=0x7f0500d7;
+        public static final int color_statusicons=0x7f0500d6;
+        public static final int comeicon=0x7f050015;
+        public static final int comeicons=0x7f050014;
+        public static final int content_slide=0x7f050049;
+        public static final int contentview=0x7f050089;
+        public static final int currentmain=0x7f05008a;
+        public static final int cycleTimeDay=0x7f0500bf;
+        public static final int cycleTimeSetValue=0x7f0500c0;
+        public static final int cycleicons=0x7f0500bc;
+        public static final int cycles_status_disease=0x7f0500d4;
+        public static final int cycles_statusicons=0x7f0500d3;
+        public static final int cyclestime=0x7f0500be;
+        public static final int datetime=0x7f050087;
+        public static final int dayback=0x7f05000d;
+        public static final int days=0x7f05006a;
+        public static final int daysleft=0x7f05008f;
+        public static final int daysshow=0x7f05008e;
+        public static final int dele_advice=0x7f0500a9;
+        public static final int dele_task=0x7f0500b3;
+        public static final int delete=0x7f05006d;
+        public static final int delete_d=0x7f050067;
+        public static final int delete_h=0x7f050055;
+        public static final int delete_m=0x7f050063;
+        public static final int delete_min=0x7f050059;
+        public static final int delete_y=0x7f05005f;
+        public static final int detail_name=0x7f0500b0;
+        public static final int dialog_item=0x7f0500b6;
         public static final int disabled=0x7f050000;
-        public static final int durationTimeFSet=0x7f05002e;
-        public static final int durationTimeFSetDay=0x7f05002d;
-        public static final int durationtime=0x7f05002c;
-        public static final int edit=0x7f050075;
-        public static final int estimate=0x7f05007e;
-        public static final int feedback=0x7f05006a;
-        public static final int feedbacksetting=0x7f05006b;
-        public static final int feedbacktexts=0x7f05006c;
-        public static final int firstdiv=0x7f050028;
-        public static final int fl_inner=0x7f05008d;
+        public static final int diseaseicons=0x7f0500cd;
+        public static final int durationTimeDay=0x7f0500c4;
+        public static final int durationTimeFSet=0x7f050030;
+        public static final int durationTimeFSetDay=0x7f05002f;
+        public static final int durationTimeSetValue=0x7f0500c5;
+        public static final int durationicons=0x7f0500c2;
+        public static final int durationstime=0x7f0500c3;
+        public static final int durationtime=0x7f05002e;
+        public static final int edit=0x7f050088;
+        public static final int estimate=0x7f050091;
+        public static final int fageValue=0x7f0500cb;
+        public static final int fageicons=0x7f0500c7;
+        public static final int fagetime=0x7f0500c9;
+        public static final int feedback=0x7f05007d;
+        public static final int feedbacksetting=0x7f05007e;
+        public static final int feedbacktexts=0x7f05007f;
+        public static final int finish_task=0x7f0500b2;
+        public static final int firstdiv=0x7f05002a;
+        public static final int fl_inner=0x7f0500a0;
         public static final int flip=0x7f050008;
-        public static final int goicon=0x7f050015;
-        public static final int goicons=0x7f050014;
+        public static final int flow_status=0x7f0500d1;
+        public static final int forgetp=0x7f050047;
+        public static final int forthdiv=0x7f05003c;
+        public static final int goicon=0x7f050017;
+        public static final int goicons=0x7f050016;
         public static final int gridview=0x7f050009;
-        public static final int headermain=0x7f050071;
-        public static final int iconview=0x7f050038;
-        public static final int imageView1=0x7f050024;
-        public static final int imageView2=0x7f05002a;
-        public static final int imageView3=0x7f050031;
-        public static final int image_plan=0x7f05005e;
-        public static final int initset=0x7f05001e;
-        public static final int lhchart=0x7f05008b;
-        public static final int likeicon=0x7f050017;
-        public static final int lovebits=0x7f050018;
-        public static final int main=0x7f050070;
-        public static final int mainRLayout=0x7f05003a;
-        public static final int maincontent=0x7f05001f;
-        public static final int mainscreen=0x7f05003c;
-        public static final int mainset=0x7f050022;
-        public static final int mainsetview=0x7f050021;
-        public static final int mainvalues=0x7f05005c;
+        public static final int handle_silde=0x7f05004a;
+        public static final int headerlogin=0x7f050040;
+        public static final int headermain=0x7f050084;
+        public static final int history_icon=0x7f0500d9;
+        public static final int history_status=0x7f0500da;
+        public static final int iconview=0x7f05003e;
+        public static final int imageView1=0x7f050026;
+        public static final int imageView2=0x7f05002c;
+        public static final int imageView3=0x7f050033;
+        public static final int imageView4=0x7f05003a;
+        public static final int image_plan=0x7f050071;
+        public static final int initset=0x7f050020;
+        public static final int isdisease=0x7f0500ce;
+        public static final int lhchart=0x7f05009e;
+        public static final int liangicons=0x7f0500d0;
+        public static final int likeicon=0x7f050019;
+        public static final int login=0x7f050045;
+        public static final int login_layout=0x7f050042;
+        public static final int lovebits=0x7f05001a;
+        public static final int main=0x7f050083;
+        public static final int mainRLayout=0x7f05004d;
+        public static final int maincontent=0x7f050021;
+        public static final int mainscreen=0x7f05004f;
+        public static final int mainset=0x7f050024;
+        public static final int mainsetview=0x7f050023;
+        public static final int mainvalues=0x7f05006f;
         public static final int manualOnly=0x7f050004;
-        public static final int medicon=0x7f05001d;
-        public static final int medlove=0x7f05001c;
-        public static final int modeicon=0x7f050016;
-        public static final int next=0x7f050037;
-        public static final int notify_set=0x7f050020;
-        public static final int numberTask=0x7f050097;
-        public static final int optionwen=0x7f050056;
-        public static final int perngantvalue=0x7f050080;
-        public static final int planicon=0x7f050060;
-        public static final int plantexts=0x7f05005f;
-        public static final int pretime=0x7f050026;
-        public static final int pretimeFSet=0x7f050027;
+        public static final int medicon=0x7f05001f;
+        public static final int medlove=0x7f05001e;
+        public static final int modeicon=0x7f050018;
+        public static final int myslide=0x7f050048;
+        public static final int next=0x7f05003d;
+        public static final int notify_set=0x7f050022;
+        public static final int numberTask=0x7f0500aa;
+        public static final int optionwen=0x7f050069;
+        public static final int passwds_login=0x7f050044;
+        public static final int perngantvalue=0x7f050093;
+        public static final int planicon=0x7f050073;
+        public static final int plantexts=0x7f050072;
+        public static final int pretime=0x7f050028;
+        public static final int pretimeFSet=0x7f050029;
         public static final int pullDownFromTop=0x7f050005;
         public static final int pullFromEnd=0x7f050002;
         public static final int pullFromStart=0x7f050001;
         public static final int pullUpFromBottom=0x7f050006;
-        public static final int pull_header=0x7f05008c;
-        public static final int pull_to_refresh_image=0x7f05008e;
-        public static final int pull_to_refresh_progress=0x7f05008f;
-        public static final int pull_to_refresh_sub_text=0x7f050091;
-        public static final int pull_to_refresh_text=0x7f050090;
-        public static final int rateshow=0x7f050078;
-        public static final int realleftday=0x7f05007d;
+        public static final int pull_header=0x7f05009f;
+        public static final int pull_to_refresh_image=0x7f0500a1;
+        public static final int pull_to_refresh_progress=0x7f0500a2;
+        public static final int pull_to_refresh_sub_text=0x7f0500a4;
+        public static final int pull_to_refresh_text=0x7f0500a3;
+        public static final int qq=0x7f05004b;
+        public static final int rateshow=0x7f05008b;
+        public static final int realleftday=0x7f050090;
         public static final int rotate=0x7f050007;
-        public static final int rtime=0x7f05003e;
-        public static final int rtime1=0x7f05003f;
-        public static final int rtime2=0x7f050043;
+        public static final int rtime=0x7f050051;
+        public static final int rtime1=0x7f050052;
+        public static final int rtime2=0x7f050056;
         public static final int scrollview=0x7f05000b;
-        public static final int seconddiv=0x7f05002f;
-        public static final int setaverage=0x7f050030;
-        public static final int setduration=0x7f050029;
-        public static final int setfirst=0x7f050023;
-        public static final int setting=0x7f050072;
-        public static final int settingcontent=0x7f05005d;
-        public static final int shares=0x7f050064;
-        public static final int sharesetting=0x7f050065;
-        public static final int sharetexts=0x7f050066;
-        public static final int special=0x7f050095;
-        public static final int starttime=0x7f050048;
-        public static final int starttime1=0x7f050049;
-        public static final int starttime2=0x7f05004d;
-        public static final int starttime3=0x7f050051;
-        public static final int suggestionbutton=0x7f050093;
-        public static final int suggestions=0x7f050094;
-        public static final int tasknumber=0x7f050098;
-        public static final int tempchart=0x7f050089;
-        public static final int temptoday=0x7f050081;
-        public static final int textView1=0x7f05003d;
-        public static final int textitem=0x7f050039;
-        public static final int thirddiv=0x7f050036;
-        public static final int ticon=0x7f05001a;
-        public static final int tmicons=0x7f05000c;
-        public static final int todayinfo=0x7f05007f;
-        public static final int todayper=0x7f050079;
-        public static final int todaytemvalue=0x7f05000e;
-        public static final int todayweightvalue=0x7f050011;
-        public static final int toollove=0x7f050019;
-        public static final int toolsbits=0x7f05001b;
-        public static final int txtave=0x7f050035;
-        public static final int txtduration=0x7f05002b;
-        public static final int txtfirst=0x7f050025;
-        public static final int username=0x7f050073;
-        public static final int value=0x7f05007a;
-        public static final int values_d=0x7f050053;
-        public static final int values_days=0x7f050059;
-        public static final int values_h=0x7f050041;
-        public static final int values_m=0x7f05004f;
-        public static final int values_min=0x7f050045;
-        public static final int values_y=0x7f05004b;
-        public static final int view1=0x7f050082;
-        public static final int view1_value=0x7f050083;
-        public static final int view2=0x7f050084;
-        public static final int view2_value=0x7f050085;
-        public static final int view3=0x7f050086;
-        public static final int view3_value=0x7f050087;
+        public static final int seconddiv=0x7f050031;
+        public static final int set_color_mens=0x7f0500d5;
+        public static final int set_disease_cycles=0x7f0500d2;
+        public static final int set_disease_dys=0x7f0500cc;
+        public static final int set_history_men=0x7f0500d8;
+        public static final int set_mens_values=0x7f0500cf;
+        public static final int setage=0x7f050039;
+        public static final int setaverage=0x7f050032;
+        public static final int setduration=0x7f05002b;
+        public static final int setfirst=0x7f050025;
+        public static final int setting=0x7f050085;
+        public static final int settingcontent=0x7f050070;
+        public static final int setyima_cycles=0x7f0500bb;
+        public static final int setyima_duration=0x7f0500c1;
+        public static final int setyima_fage=0x7f0500c6;
+        public static final int shares=0x7f050077;
+        public static final int sharesetting=0x7f050078;
+        public static final int sharetexts=0x7f050079;
+        public static final int shutdown=0x7f050041;
+        public static final int special=0x7f0500a8;
+        public static final int starttime=0x7f05005b;
+        public static final int starttime1=0x7f05005c;
+        public static final int starttime2=0x7f050060;
+        public static final int starttime3=0x7f050064;
+        public static final int suggestionbutton=0x7f0500a6;
+        public static final int suggestions=0x7f0500a7;
+        public static final int task_details_bg=0x7f0500ae;
+        public static final int taskback=0x7f0500ac;
+        public static final int taskdetail_content=0x7f0500b5;
+        public static final int taskdetail_time=0x7f0500b4;
+        public static final int taskdetailback=0x7f0500ad;
+        public static final int taskdetails=0x7f0500b9;
+        public static final int taskname=0x7f0500b7;
+        public static final int tasknumber=0x7f0500ab;
+        public static final int tasktime=0x7f0500b8;
+        public static final int tempchart=0x7f05009c;
+        public static final int temptoday=0x7f050094;
+        public static final int textView1=0x7f050050;
+        public static final int textitem=0x7f05003f;
+        public static final int thirddiv=0x7f050038;
+        public static final int ticon=0x7f05001c;
+        public static final int timeclock=0x7f0500af;
+        public static final int tmicons=0x7f05000e;
+        public static final int todayinfo=0x7f050092;
+        public static final int todayper=0x7f05008c;
+        public static final int todaytemvalue=0x7f050010;
+        public static final int todayweightvalue=0x7f050013;
+        public static final int toollove=0x7f05001b;
+        public static final int toolsbits=0x7f05001d;
+        public static final int txtage=0x7f05003b;
+        public static final int txtave=0x7f050037;
+        public static final int txtcycles=0x7f0500bd;
+        public static final int txtduration=0x7f05002d;
+        public static final int txtfage=0x7f0500c8;
+        public static final int txtfirst=0x7f050027;
+        public static final int underlogin=0x7f050046;
+        public static final int username=0x7f050086;
+        public static final int username_login=0x7f050043;
+        public static final int value=0x7f05008d;
+        public static final int values_d=0x7f050066;
+        public static final int values_days=0x7f05006c;
+        public static final int values_h=0x7f050054;
+        public static final int values_m=0x7f050062;
+        public static final int values_min=0x7f050058;
+        public static final int values_y=0x7f05005e;
+        public static final int view1=0x7f050095;
+        public static final int view1_value=0x7f050096;
+        public static final int view2=0x7f050097;
+        public static final int view2_value=0x7f050098;
+        public static final int view3=0x7f050099;
+        public static final int view3_value=0x7f05009a;
         public static final int webview=0x7f05000a;
-        public static final int weicons=0x7f05000f;
-        public static final int weightbits=0x7f050010;
-        public static final int weightchart=0x7f05008a;
-        public static final int xinyun=0x7f05003b;
-        public static final int yimaset=0x7f050061;
-        public static final int yimasetting=0x7f050062;
-        public static final int yimatexts=0x7f050063;
+        public static final int weibo=0x7f05004c;
+        public static final int weicons=0x7f050011;
+        public static final int weightbits=0x7f050012;
+        public static final int weightchart=0x7f05009d;
+        public static final int xinyun=0x7f05004e;
+        public static final int yimaback=0x7f0500ba;
+        public static final int yimaset=0x7f050074;
+        public static final int yimasetting=0x7f050075;
+        public static final int yimatexts=0x7f050076;
     }
     public static final class layout {
-        public static final int edittoday=0x7f030000;
-        public static final int initset=0x7f030001;
-        public static final int listitem=0x7f030002;
-        public static final int main=0x7f030003;
-        public static final int poprt=0x7f030004;
-        public static final int popst=0x7f030005;
-        public static final int poptz=0x7f030006;
-        public static final int pull_to_refresh=0x7f030007;
-        public static final int pull_to_refresh_header=0x7f030008;
-        public static final int pull_to_refresh_header_horizontal=0x7f030009;
-        public static final int pull_to_refresh_header_vertical=0x7f03000a;
-        public static final int suglayout=0x7f03000b;
+        public static final int aboutus=0x7f030000;
+        public static final int edittoday=0x7f030001;
+        public static final int initset=0x7f030002;
+        public static final int listitem=0x7f030003;
+        public static final int login=0x7f030004;
+        public static final int main=0x7f030005;
+        public static final int poprt=0x7f030006;
+        public static final int popst=0x7f030007;
+        public static final int poptz=0x7f030008;
+        public static final int pull_to_refresh=0x7f030009;
+        public static final int pull_to_refresh_header=0x7f03000a;
+        public static final int pull_to_refresh_header_horizontal=0x7f03000b;
+        public static final int pull_to_refresh_header_vertical=0x7f03000c;
+        public static final int suglayout=0x7f03000d;
+        public static final int task=0x7f03000e;
+        public static final int taskdetail=0x7f03000f;
+        public static final int taskitem=0x7f030010;
+        public static final int yimaset=0x7f030011;
     }
     public static final class string {
         public static final int aboutsetting=0x7f070033;
         public static final int advice=0x7f070014;
         public static final int adviceheader=0x7f07000a;
+        public static final int ages=0x7f070036;
         public static final int app_name=0x7f070006;
         public static final int ave_days=0x7f07002b;
         public static final int backupsetting=0x7f070031;
         public static final int basictempdemo=0x7f070019;
         public static final int chartdetails=0x7f070022;
+        public static final int color_mens=0x7f07003d;
+        public static final int colors_mens=0x7f07003e;
+        public static final int cycle_state=0x7f07003a;
+        public static final int cycle_status=0x7f070039;
         public static final int datetime=0x7f070009;
         public static final int daybit=0x7f070013;
+        public static final int dele_text=0x7f07004b;
         public static final int demovalue=0x7f070023;
+        public static final int detailtask=0x7f070049;
         public static final int distances=0x7f07001c;
+        public static final int dysmenorrhea=0x7f070038;
         public static final int enterwords1=0x7f070015;
         public static final int enterwords2=0x7f070017;
         public static final int estimatestring=0x7f07001b;
         public static final int feedbacksetting=0x7f070032;
+        public static final int finish_text=0x7f07004a;
+        public static final int first_age=0x7f070047;
+        public static final int flow_state=0x7f07003c;
+        public static final int forgetpasswd=0x7f070042;
+        public static final int history_mens=0x7f07003f;
+        public static final int history_mens_dis=0x7f070040;
         public static final int howmany=0x7f070011;
         public static final int jinjian=0x7f070034;
+        public static final int liang=0x7f07003b;
+        public static final int login=0x7f070041;
         public static final int lovename=0x7f070026;
         public static final int markword=0x7f07000e;
         public static final int medicinename=0x7f070028;
         public static final int mood=0x7f070025;
         public static final int next=0x7f070012;
+        public static final int notregister=0x7f070043;
         public static final int onlywifi=0x7f07000c;
+        public static final int passwd=0x7f070045;
         public static final int period_name=0x7f07001e;
         public static final int plan=0x7f07002d;
         /**  Just use standard Pull Down String when pulling up. These can be set for languages which require it 
@@ -938,16 +1035,21 @@ containing a value of this type.
         public static final int stringtemp_value=0x7f07001f;
         public static final int sure=0x7f070016;
         public static final int tasksnumber=0x7f07002a;
+        public static final int third_login=0x7f070046;
         public static final int timeout=0x7f07000d;
         public static final int todaydetails=0x7f070021;
-        public static final int todayperngant=0x7f07002c;
+        public static final int todayperngant=0x7f07004c;
+        public static final int todaypernsgant=0x7f07002c;
+        public static final int todaytask=0x7f070048;
         public static final int toolname=0x7f070027;
         public static final int toolsetting=0x7f07002e;
         public static final int unknow=0x7f070018;
         public static final int updatetime=0x7f070035;
+        public static final int user=0x7f070044;
         public static final int username=0x7f070008;
         public static final int weight_name=0x7f07001d;
         public static final int weightbit=0x7f07001a;
+        public static final int year_bit=0x7f070037;
         public static final int yimacome=0x7f070010;
         public static final int yimacomes=0x7f070029;
         public static final int yimago=0x7f070024;
@@ -955,6 +1057,7 @@ containing a value of this type.
     }
     public static final class style {
         public static final int AnimBottom=0x7f090004;
+        public static final int AnimationActivity=0x7f090009;
         /** 
         Base application theme, dependent on API level. This theme is replaced
         by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
@@ -978,10 +1081,14 @@ containing a value of this type.
          */
         public static final int AppBaseTheme=0x7f090000;
         public static final int AppTheme=0x7f090003;
+        public static final int InOut=0x7f090008;
+        /**  item name="android:windowIsTranslucent">true</item 
+         */
+        public static final int MainTheme=0x7f090007;
         /**  模糊 
          */
         public static final int MyDialogStyleBottom=0x7f090005;
-        public static final int Transparent =0x7f090006;
+        public static final int Transparent=0x7f090006;
         /**  Application theme. 
  All customizations that are NOT specific to a particular API-level can go here. 
          */
@@ -1055,7 +1162,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
           <p>This is a private symbol.
-          @attr name android:ptrAdapterViewBackground
+          @attr name com.jun.pregnancy:ptrAdapterViewBackground
         */
         public static final int PullToRefresh_ptrAdapterViewBackground = 16;
         /**
@@ -1074,7 +1181,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>flip</code></td><td>0x1</td><td></td></tr>
 </table>
           <p>This is a private symbol.
-          @attr name android:ptrAnimationStyle
+          @attr name com.jun.pregnancy:ptrAnimationStyle
         */
         public static final int PullToRefresh_ptrAnimationStyle = 12;
         /**
@@ -1086,7 +1193,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name android:ptrDrawable
+          @attr name com.jun.pregnancy:ptrDrawable
         */
         public static final int PullToRefresh_ptrDrawable = 6;
         /**
@@ -1096,7 +1203,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name android:ptrDrawableBottom
+          @attr name com.jun.pregnancy:ptrDrawableBottom
         */
         public static final int PullToRefresh_ptrDrawableBottom = 18;
         /**
@@ -1108,7 +1215,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name android:ptrDrawableEnd
+          @attr name com.jun.pregnancy:ptrDrawableEnd
         */
         public static final int PullToRefresh_ptrDrawableEnd = 8;
         /**
@@ -1120,7 +1227,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name android:ptrDrawableStart
+          @attr name com.jun.pregnancy:ptrDrawableStart
         */
         public static final int PullToRefresh_ptrDrawableStart = 7;
         /**
@@ -1130,7 +1237,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name android:ptrDrawableTop
+          @attr name com.jun.pregnancy:ptrDrawableTop
         */
         public static final int PullToRefresh_ptrDrawableTop = 17;
         /**
@@ -1144,7 +1251,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
           <p>This is a private symbol.
-          @attr name android:ptrHeaderBackground
+          @attr name com.jun.pregnancy:ptrHeaderBackground
         */
         public static final int PullToRefresh_ptrHeaderBackground = 1;
         /**
@@ -1158,7 +1265,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
           <p>This is a private symbol.
-          @attr name android:ptrHeaderSubTextColor
+          @attr name com.jun.pregnancy:ptrHeaderSubTextColor
         */
         public static final int PullToRefresh_ptrHeaderSubTextColor = 3;
         /**
@@ -1170,7 +1277,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name android:ptrHeaderTextAppearance
+          @attr name com.jun.pregnancy:ptrHeaderTextAppearance
         */
         public static final int PullToRefresh_ptrHeaderTextAppearance = 10;
         /**
@@ -1184,7 +1291,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
           <p>This is a private symbol.
-          @attr name android:ptrHeaderTextColor
+          @attr name com.jun.pregnancy:ptrHeaderTextColor
         */
         public static final int PullToRefresh_ptrHeaderTextColor = 2;
         /**
@@ -1201,7 +1308,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a boolean value, either "<code>true</code>" or "<code>false</code>".
           <p>This is a private symbol.
-          @attr name android:ptrListViewExtrasEnabled
+          @attr name com.jun.pregnancy:ptrListViewExtrasEnabled
         */
         public static final int PullToRefresh_ptrListViewExtrasEnabled = 14;
         /**
@@ -1225,7 +1332,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>pullUpFromBottom</code></td><td>0x2</td><td></td></tr>
 </table>
           <p>This is a private symbol.
-          @attr name android:ptrMode
+          @attr name com.jun.pregnancy:ptrMode
         */
         public static final int PullToRefresh_ptrMode = 4;
         /**
@@ -1238,7 +1345,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a boolean value, either "<code>true</code>" or "<code>false</code>".
           <p>This is a private symbol.
-          @attr name android:ptrOverScroll
+          @attr name com.jun.pregnancy:ptrOverScroll
         */
         public static final int PullToRefresh_ptrOverScroll = 9;
         /**
@@ -1252,7 +1359,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
           <p>This is a private symbol.
-          @attr name android:ptrRefreshableViewBackground
+          @attr name com.jun.pregnancy:ptrRefreshableViewBackground
         */
         public static final int PullToRefresh_ptrRefreshableViewBackground = 0;
         /**
@@ -1268,7 +1375,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a boolean value, either "<code>true</code>" or "<code>false</code>".
           <p>This is a private symbol.
-          @attr name android:ptrRotateDrawableWhilePulling
+          @attr name com.jun.pregnancy:ptrRotateDrawableWhilePulling
         */
         public static final int PullToRefresh_ptrRotateDrawableWhilePulling = 15;
         /**
@@ -1281,7 +1388,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a boolean value, either "<code>true</code>" or "<code>false</code>".
           <p>This is a private symbol.
-          @attr name android:ptrScrollingWhileRefreshingEnabled
+          @attr name com.jun.pregnancy:ptrScrollingWhileRefreshingEnabled
         */
         public static final int PullToRefresh_ptrScrollingWhileRefreshingEnabled = 13;
         /**
@@ -1294,7 +1401,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a boolean value, either "<code>true</code>" or "<code>false</code>".
           <p>This is a private symbol.
-          @attr name android:ptrShowIndicator
+          @attr name com.jun.pregnancy:ptrShowIndicator
         */
         public static final int PullToRefresh_ptrShowIndicator = 5;
         /**
@@ -1306,7 +1413,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name android:ptrSubHeaderTextAppearance
+          @attr name com.jun.pregnancy:ptrSubHeaderTextAppearance
         */
         public static final int PullToRefresh_ptrSubHeaderTextAppearance = 11;
         /**  attr name="textSize" format="dimension"></attr
@@ -1336,7 +1443,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name android:background
+          @attr name com.jun.pregnancy:background
         */
         public static final int SpecialView_background = 1;
         /**
@@ -1351,7 +1458,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name android:textColor
+          @attr name com.jun.pregnancy:textColor
         */
         public static final int SpecialView_textColor = 0;
     };

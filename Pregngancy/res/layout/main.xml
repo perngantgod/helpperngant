@@ -3,7 +3,7 @@
     android:id="@+id/mainRLayout"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="@drawable/splash_back" >
+    android:background="@drawable/main_background" >
     <TextView
         android:id="@+id/xinyun"
         android:layout_width="wrap_content"
